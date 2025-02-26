@@ -1,0 +1,158 @@
+% ratt-handbook.sty
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{ratt-handbook}[Custom style for RATT Student Handbook]
+
+% ========== Base Packages ==========
+\RequirePackage[utf8]{inputenc}
+\RequirePackage{graphicx}
+\RequirePackage{hyperref}
+\RequirePackage{fancyhdr}
+\RequirePackage{geometry}
+\RequirePackage{xcolor}
+\RequirePackage{titlesec}
+\RequirePackage{fontspec}
+\RequirePackage{setspace}
+\RequirePackage{tikz}
+\RequirePackage[explicit]{titlesec}
+\usetikzlibrary{calc}
+
+% ========== Color Scheme ==========
+\definecolor{ratt-primary}{HTML}{802474}
+\definecolor{ratt-secondary}{HTML}{5A1A4D}
+\definecolor{ratt-accent}{HTML}{E0E0E0}
+\definecolor{section-gray}{HTML}{4A4A4A}
+
+% ========== Font Configuration ==========
+\setmainfont{Fira Sans}[
+    Path = ../resources/fonts/,
+    Extension = .ttf,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic,
+    BoldItalicFont = *-BoldItalic
+]
+
+\setsansfont{Fira Sans}[
+    Path = ../resources/fonts/,
+    Extension = .ttf,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic,
+    BoldItalicFont = *-BoldItalic
+]
+
+\setmonofont{Fira Code}[
+    Path = ../resources/fonts/,
+    Extension = .ttf,
+    UprightFont = *-Regular,
+    BoldFont = *-Bold,
+    ItalicFont = *-Italic,
+    BoldItalicFont = *-BoldItalic
+]
+
+% ========== Page Layout ==========
+\geometry{
+    a4paper,
+    top=30mm,
+    bottom=30mm,
+    left=25mm,
+    right=25mm,
+    headheight=15mm,
+    footskip=10mm
+}
+
+% ========== Header/Footer Design ==========
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+% Modern header with colored bar
+\fancyhead[L]{
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[color=ratt-primary] (current page.north west) rectangle
+            ($(current page.north east)+(0,-10mm)$);
+        \node[anchor=west, white, font=\sffamily\bfseries] at
+            ($(current page.north west)+(15mm,-5mm)$) {\footnotesize RATT Student Handbook};
+        \node[anchor=east, white] at
+            ($(current page.north east)+(-15mm,-5mm)$) {\includegraphics[height=8mm]{logos/ratt-logo.png}};
+    \end{tikzpicture}
+}
+
+\fancyfoot[C]{
+    \begin{tikzpicture}[remember picture,overlay]
+        \fill[color=ratt-accent] (current page.south west) rectangle
+            ($(current page.south west)+(50mm,2mm)$);
+    \end{tikzpicture}
+    \color{section-gray}\thepage
+}
+
+% ========== Title Page Redesign ==========
+\renewcommand{\maketitle}{
+    \begin{titlepage}
+        \begin{tikzpicture}[remember picture,overlay]
+            \fill[color=ratt-primary] (current page.north west) rectangle
+                (current page.south east);
+        \end{tikzpicture}
+
+        \vspace*{20mm}
+        \centering
+
+        % Institution logos
+        \includegraphics[height=20mm]{logos/rhodes-logo-1.png}\hspace{15mm}
+        \includegraphics[height=20mm]{logos/sarao-logo.png}
+
+        \vspace{15mm}
+        {\color{white}\Huge\sffamily\bfseries \@title}
+
+        \vspace{10mm}
+        \includegraphics[height=25mm]{logos/ratt-logo.png}
+
+        \vfill
+        {\color{white}\Large\sffamily Radio Astronomy Techniques \& Technologies}
+
+        \vspace{5mm}
+        {\color{ratt-accent}\large\sffamily Rhodes University\\\@date}
+    \end{titlepage}
+}
+
+% ========== Section Styling ==========
+\titleformat{\section}
+    {\sffamily\Large\bfseries\color{ratt-primary}}
+    {}
+    {0em}
+    {#1 \titlerule[1pt]}
+    [\vspace{-1em}]
+
+\titleformat{\subsection}
+    {\sffamily\large\bfseries\color{ratt-secondary}}
+    {}
+    {0em}
+    {#1}
+    [\vspace{-0.5em}]
+
+% ========== Hyperlink Styling ==========
+\hypersetup{
+    colorlinks=true,
+    linkcolor=ratt-primary,
+    urlcolor=ratt-secondary,
+    citecolor=ratt-secondary
+}
+
+% ========== Custom Elements ==========
+\newcommand{\rattbox}[1]{
+    \begin{center}
+        \begin{tikzpicture}
+            \node[rectangle,
+                  rounded corners=3mm,
+                  draw=ratt-primary,
+                  line width=1pt,
+                  inner ysep=10pt,
+                  inner xsep=15pt,
+                  fill=ratt-accent!20]
+                {\parbox{0.9\linewidth}{#1}};
+        \end{tikzpicture}
+    \end{center}
+}
+
+% =========- Line Spacing -=========-
+\onehalfspacing
