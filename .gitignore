@@ -1,0 +1,31 @@
+# LaTeX-related files to ignore
+
+# Generated files by LaTeX
+*.aux        # Auxiliary files
+*.log        # Log files
+*.out        # Output files
+*.toc        # Table of contents
+*.lof        # List of figures
+*.lot        # List of tables
+*.fls        # File list
+*.fdb_latexmk # Latexmk build database
+
+# Intermediate files
+*.synctex.gz # SyncTeX - for synchronization between editors and viewers
+*.nav        # Navigation files for PDFs with links
+*.snm        # Slide numbers for Beamer presentations
+*.vrb        # Verbose files for Beamer presentations
+
+# Bibliography files
+*.bbl        # Bibliography files
+*.blg        # Bibliography log
+
+# Miscellaneous
+*.bak        # Backup files
+*.dvi        # Device independent file format
+*.ps         # PostScript files
+*.pdf        # Portable Document Format files
+
+# Temporary files
+*.tmp        # Temporary files
+*.backup     # Backup files
