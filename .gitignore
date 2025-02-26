@@ -11,7 +11,7 @@
 **/*.fdb_latexmk
 
 # Intermediate files
-**/*.synctex.gz
+**/*.synctex*
 **/*.nav
 **/*.snm
 **/*.vrb
@@ -19,6 +19,8 @@
 # Bibliography files
 **/*.bbl
 **/*.blg
+**/*.bcf
+**/*.run.xml
 
 # Miscellaneous
 **/*.bak
