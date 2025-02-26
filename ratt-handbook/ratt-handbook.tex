@@ -1,12 +1,16 @@
 \documentclass[12pt]{article}
 \usepackage{ratt-handbook}
+\usepackage[backend=biber]{biblatex}
 
 % Set path for resources
 \graphicspath{{../resources/images/}}
 
+% Add bibliography
+\addbibresource{ratt-handbook.bib}
+
 \title{Student Handbook}
 \author{}  % Author removed as it's handled in title page redesign
-\date{2023}
+\date{\the\year}
 
 \begin{document}
 
@@ -14,11 +18,7 @@
 
 \newpage
 
-% Example content
-\section{Introduction to RATT}
-\rattbox{
-    \textbf{Welcome!} This handbook contains essential information about our research group's operations, expectations, and resources available to you.
-}
+\section{Introduction}
 
 \subsection{Research Focus Areas}
 \begin{itemize}

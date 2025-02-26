@@ -13,7 +13,6 @@
 \RequirePackage{fontspec}
 \RequirePackage{setspace}
 \RequirePackage{tikz}
-\RequirePackage[explicit]{titlesec}
 \usetikzlibrary{calc}
 
 % ========== Color Scheme ==========
@@ -46,8 +45,6 @@
     Extension = .ttf,
     UprightFont = *-Regular,
     BoldFont = *-Bold,
-    ItalicFont = *-Italic,
-    BoldItalicFont = *-BoldItalic
 ]
 
 % ========== Page Layout ==========
@@ -89,45 +86,42 @@
 % ========== Title Page Redesign ==========
 \renewcommand{\maketitle}{
     \begin{titlepage}
-        \begin{tikzpicture}[remember picture,overlay]
-            \fill[color=ratt-primary] (current page.north west) rectangle
-                (current page.south east);
-        \end{tikzpicture}
-
-        \vspace*{20mm}
         \centering
 
-        % Institution logos
-        \includegraphics[height=20mm]{logos/rhodes-logo-1.png}\hspace{15mm}
+        % RATT Logo
+        \includegraphics[width=0.5\textwidth]{logos/ratt-logo.png}
+        \vfill
+        \scalebox{2}{\fontsize{32pt}{0pt}\selectfont \color{ratt-primary}\Huge\sffamily\bfseries \@title}
+
+        \vfill
+
+        % Instituition Logos
+        \includegraphics[height=20mm]{logos/rhodes-logo-1.png}\hspace{20mm}
         \includegraphics[height=20mm]{logos/sarao-logo.png}
 
         \vspace{15mm}
-        {\color{white}\Huge\sffamily\bfseries \@title}
 
-        \vspace{10mm}
-        \includegraphics[height=25mm]{logos/ratt-logo.png}
-
-        \vfill
-        {\color{white}\Large\sffamily Radio Astronomy Techniques \& Technologies}
+        {\color{ratt-secondary}\Large\sffamily Radio Astronomy Techniques \& Technologies}
 
         \vspace{5mm}
-        {\color{ratt-accent}\large\sffamily Rhodes University\\\@date}
+
+        {\color{ratt-secondary}\large\sffamily Rhodes University\\\@date}
     \end{titlepage}
 }
 
 % ========== Section Styling ==========
 \titleformat{\section}
     {\sffamily\Large\bfseries\color{ratt-primary}}
-    {}
-    {0em}
-    {#1 \titlerule[1pt]}
+    {\thesection}
+    {1em}
+    {\titlerule[1pt]\\\vspace{0.5em}}
     [\vspace{-1em}]
 
 \titleformat{\subsection}
     {\sffamily\large\bfseries\color{ratt-secondary}}
+    {\thesubsection}
+    {1em}
     {}
-    {0em}
-    {#1}
     [\vspace{-0.5em}]
 
 % ========== Hyperlink Styling ==========
