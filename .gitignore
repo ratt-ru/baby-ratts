@@ -29,7 +29,6 @@
 **/*.bak
 **/*.dvi
 **/*.ps
-**/*.pdf
 
 # Temporary files
 **/*.tmp
