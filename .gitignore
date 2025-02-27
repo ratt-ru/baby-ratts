@@ -17,10 +17,13 @@
 **/*.vrb
 
 # Bibliography files
-**/*.bbl
+**/*.bbl*
 **/*.blg
 **/*.bcf
 **/*.run.xml
+
+# Minted files
+**/_minted*/
 
 # Miscellaneous
 **/*.bak
