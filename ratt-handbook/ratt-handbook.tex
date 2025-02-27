@@ -1,6 +1,11 @@
 \documentclass[12pt]{article}
 \usepackage{ratt-handbook}
 \usepackage[backend=biber]{biblatex}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{booktabs}
+\usepackage{float}
 
 % Set path for resources
 \graphicspath{{../resources/images/}}
@@ -8,7 +13,7 @@
 % Add bibliography
 \addbibresource{ratt-handbook.bib}
 
-\title{Student Handbook}
+\title{Postgraduate\\Student Handbook}
 \author{}  % Author removed as it's handled in title page redesign
 \date{\the\year}
 
@@ -20,11 +25,80 @@
 
 \section{Introduction}
 
-\subsection{Research Focus Areas}
-\begin{itemize}
-    \item Radio Interferometry Techniques
-    \item Signal Processing Algorithms
-    \item Next-gen Telescope Development
-\end{itemize}
+    This is the \emph{Postgraduate Student Handbook} for the \emph{Radio Astronomy Techniques and Technologies} (RATT) group at Rhodes University. It provides information for both new and existing postgraduate students on various aspects of the group and its activities. In addition, it contains useful onboarding and academic information for areas such as presenting, events, education, academic adminstration and useful resources.
+
+    The handbook will be updated on a yearly basis to ensure it provides the latest updates and new information. Therefore, please ensure to download the newest version of this handbook each year.
+
+    \subsection{Repository}\label{subsec:repository}
+        This handbook lives in the following repository
+
+        \begin{quotation}
+            \url{https://github.com/kwazzi-jack/ratt-students/}
+        \end{quotation}
+
+        All references to the student repository refers to the above link. Moreover, all files given throughout this handbook are given relative to the repository directory \texttt{ratt-students/} or the sub-directory \texttt{resources/} in the same repository, unless otherwise stated. All resources used in the compilation of this handbook are found within the same directory.
+
+        The latest RATT Student Handbook PDF can be downloaded via this link:
+
+        \begin{quotation}
+            \hyperlink{https://github.com/kwazzi-jack/ratt-students/blob/main/ratt-handbook/ratt-handbook.pdf}{\texttt{ratt-students/ratt-handbook/ratt-handbook.pdf}}
+        \end{quotation}
+
+        If you wish to compile the document yourself, you only need to have \texttt{lualatex} compiler available on your system in combination with \texttt{biber} with the following recipe:
+
+        \begin{minted}{bash}
+            lualatex ratt-handbook.tex
+            biber ratt-handbook
+            lualatex ratt-handbook.tex
+        \end{minted}
+
+        For any issues in this regard, please refer to the contact details given in \cref{sec:contact}.
+
+    \subsection{Research Focus Areas}
+        \begin{itemize}
+            \item Radio Interferometry Techniques
+            \item Signal Processing Algorithms
+            \item Next-gen Telescope Development
+        \end{itemize}
+
+\newpage
+
+\section{Events}\label{sec:2:events}
+    There are several events that RATT is involved. Some are optional while others are mandatory. Each depends on your field of study, so please investigate whether or not it applies to you if not stated.
+
+    \subsection{SARAO Scholarship Conference}\label{subsec:sarao_scholarship_conference}
+
+    \subsubsection{Overview}\label{subsubsec:overview}
+        The SARAO Scholarship is a \emph{mandatory} conference for all postgraduate students part of SARAO, which includes RATT students. It happens yearly at the end of November/start of December. The conference brings together all students and researchers involved with radio astronomy and interferometry to provide a platform for research professionals to provide key-note talks and reports, and, most importantly, for students to present on their research progress so far. It is a great opportunity to network with fellow peers and industry experts. Moreover, it is an opportunity for students to practice public speaking and presentation skills.
+
+        The location of the conference changes year-to-year, with the details usually provided earlier in the year. It is up to you to ensure that the exact dates and times are noted in your calendar. The exact dates are generally provided earlier in the year. Travel and accomodation costs are covered by SARAO and organisation is handled by RATT administrative team. Note, the conference is usually five days long and scheduled from Monday to Friday. During the conference, there is several informal and fun activities organised for students to take part in. In previous years, we have had speed-meets, gameboard nights, karaoke and team-building competitions.
+
+
+    \subsubsection{Presentations}\label{subsubsec:presentations}
+        At the conference, each student will create and present a short talk on their work to an academically diverse audience. For guidance on presenting, see \cref{sec:presentations}. Specific information about the SARAO conference presentations are given below. Note, any file paths given below are either found in the \texttt{resources/} directory in the git repository, or are explicit links to follow.
+
+        \begin{itemize}
+            \item The presentation is to be in \emph{PDF} format, unless stated otherwise.
+            \item The slides should be presentable and appropriate for the academic crowd.
+            \item Ensure you include the following logos on the front slide in this order:
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{lll}
+                    {\color{ratt-primary} Order} & Logo & Filename \\
+                    \midrule
+                    First & SARAO-NRF & \texttt{sarao-logo.png} \\
+                    Second & Rhodes University & \texttt{rhodes-logo-1.png} \\
+                    Last & RATT & \texttt{ratt-logo.png} \\
+                    \bottomrule
+                \end{tabular}
+            \end{table}
+            These files can be found in \texttt{resources/images/logos/}.
+        \end{itemize}
+
+        The presentation file is normally required to be in \emph{PDF} format, unless stated otherwise. The date for the SARAO conference is given out earlier in the year for students to mark down in their calendars.
+
+\section{Presentations}\label{sec:presentations}
+
+\section{Contacts}\label{sec:contact}
 
 \end{document}

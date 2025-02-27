@@ -14,6 +14,7 @@
 \RequirePackage{setspace}
 \RequirePackage{tikz}
 \usetikzlibrary{calc}
+\RequirePackage{minted}
 
 % ========== Color Scheme ==========
 \definecolor{ratt-primary}{HTML}{802474}
@@ -58,6 +59,9 @@
     footskip=10mm
 }
 
+\setlength{\parskip}{1em}
+\setlength{\parindent}{0pt}
+
 % ========== Header/Footer Design ==========
 \pagestyle{fancy}
 \fancyhf{}
@@ -66,12 +70,11 @@
 % Modern header with colored bar
 \fancyhead[L]{
     \begin{tikzpicture}[remember picture,overlay]
-        \fill[color=ratt-primary] (current page.north west) rectangle
-            ($(current page.north east)+(0,-10mm)$);
-        \node[anchor=west, white, font=\sffamily\bfseries] at
-            ($(current page.north west)+(15mm,-5mm)$) {\footnotesize RATT Student Handbook};
-        \node[anchor=east, white] at
-            ($(current page.north east)+(-15mm,-5mm)$) {\includegraphics[height=8mm]{logos/ratt-logo.png}};
+        \node[anchor=east] at
+            ($(current page.north east)+(-15mm,-10mm)$) {\includegraphics[height=8mm]{logos/ratt-logo.png}};
+        \draw [ratt-secondary, line width=0.5mm]
+            ($(current page.north west)+(15mm,-20mm)$) --
+            ($(current page.north east)+(-15mm,-20mm)$);
     \end{tikzpicture}
 }
 
@@ -84,6 +87,7 @@
 }
 
 % ========== Title Page Redesign ==========
+\makeatletter
 \renewcommand{\maketitle}{
     \begin{titlepage}
         \centering
@@ -91,11 +95,18 @@
         % RATT Logo
         \includegraphics[width=0.5\textwidth]{logos/ratt-logo.png}
         \vfill
-        \scalebox{2}{\fontsize{32pt}{0pt}\selectfont \color{ratt-primary}\Huge\sffamily\bfseries \@title}
+        \scalebox{2}{
+            \fontsize{32pt}{0pt}\selectfont
+            \color{ratt-primary}
+            \Huge\sffamily\bfseries
+            \begin{tabular}{c}
+                \@title
+            \end{tabular}
+        }
 
         \vfill
 
-        % Instituition Logos
+        % Institution Logos
         \includegraphics[height=20mm]{logos/rhodes-logo-1.png}\hspace{20mm}
         \includegraphics[height=20mm]{logos/sarao-logo.png}
 
@@ -111,16 +122,32 @@
 
 % ========== Section Styling ==========
 \titleformat{\section}
-    {\sffamily\Large\bfseries\color{ratt-primary}}
-    {\thesection}
-    {1em}
-    {\titlerule[1pt]\\\vspace{0.5em}}
-    [\vspace{-1em}]
+    {% format
+        \sffamily\Large\bfseries\color{ratt-primary}
+    }
+    {% label
+        \thesection
+    }
+    {% sep
+        3em
+    }
+    {% before-code
+    }
+    [% after-code
+        \vspace{1em}
+    ]
 
 \titleformat{\subsection}
     {\sffamily\large\bfseries\color{ratt-secondary}}
     {\thesubsection}
-    {1em}
+    {2em}
+    {}
+    [\vspace{-0.5em}]
+
+\titleformat{\subsubsection}
+    {\sffamily\normalsize\bfseries\color{ratt-primary}} %
+    {}
+    {0pt}
     {}
     [\vspace{-0.5em}]
 
@@ -150,3 +177,17 @@
 
 % =========- Line Spacing -=========-
 \onehalfspacing
+
+% ========= Custom Code Blocks ======
+
+\setminted{
+  fontsize=\small,
+  frame=single,
+  framesep=10pt,
+  bgcolor=ratt-primary!20,
+  baselinestretch=1,
+  numbersep=5pt,
+  gobble=0,
+  tabsize=4,
+  breaklines,
+}
