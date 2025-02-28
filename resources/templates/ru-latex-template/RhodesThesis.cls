@@ -1,24 +1,28 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Masters/Doctoral Thesis 
-% Class File
-% Version 1.6 (27/8/17)
+% Name: RhodesThesis.cls
+% Type: LaTeX class file
+% Version: 1.0
+% Author(s):
+%   Brian Welman (https://github.com/kwazzi-jack)
+% Maintainer:
+%   RATT, Rhodes University (https://ratt.center/)
+% License: LPPL v1.3c (http://www.latex-project.org/lppl)
 %
-% This class was downloaded from:
-% http://www.LaTeXTemplates.com
+% This file is a modified version of:
+% 	Name: Masters/Doctoral Thesis
+% 	Version: 1.6 (27/8/17)
+% 	Author(s): Vel (vel@latextemplates.com), Johannes Böttcher
+% 	Original License: LPPL v1.3c
 %
-% Authors:
-% Vel (vel@latextemplates.com)
-% Johannes Böttcher
+% This work may be distributed and/or modified under the conditions of
+% the LaTeX Project Public License (LPPL), either version 1.3c of this
+% license or (at your option) any later version.
 %
-% Notes:
-% 1) This class file defines the structure and layout of the template file (main.tex).
-% 2) It has been written in such a way that under most circumstances you should not need
-% to edit it; updating it to a newer version will be harder. If you do make changes, please change the name of
-% the file and add comments to make your changes more visible.
+% This modified version is maintained by the RATT Group
+% and is not an official release by the original authors.
 %
-% Class license:
-% LPPL v1.3c (http://www.latex-project.org/lppl)
-%
+% This work consists of the file RhodesThesis.cls and any related
+% documentation files.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
@@ -55,7 +59,7 @@
 
 \LoadClass{\baseclass}
 
-%  Simple interface for the user  to customize the chapter titles 
+%  Simple interface for the user  to customize the chapter titles
 \ProvideDocumentCommand{\abovechapterskip}{}{\vspace*{20pt}}
 \ProvideDocumentCommand{\chapterbelowskip}{}{\vspace*{40pt}}
 \ProvideDocumentCommand{\chapterinbetweenskip}{}{\vspace*{20pt}}
@@ -131,7 +135,7 @@
 %	CLASS OPTIONS
 %----------------------------------------------------------------------------------------
 
-\ifbool{parskip}{\RequirePackage{parskip}} % If the parskip option is passed to the class, require the parskip package 
+\ifbool{parskip}{\RequirePackage{parskip}} % If the parskip option is passed to the class, require the parskip package
 
 
 \ifbool{listtoc}{% If the liststotoc option has been passed to the class, add the lists to the table of contents
@@ -226,7 +230,7 @@
 \NewDocumentCommand{\subject}{m}{\newcommand{\subjectname}{#1}}
 \NewDocumentCommand{\keywords}{m}{\newcommand{\keywordnames}{#1}}
 
-\newcommand{\checktoopen}{% New command to move content to the next page which prints to the next odd page if twosided mode is active  
+\newcommand{\checktoopen}{% New command to move content to the next page which prints to the next odd page if twosided mode is active
 	\if@openright\cleardoublepage\else\clearpage\fi
 	\ifdef{\phantomsection}{\phantomsection}{}% The \phantomsection command is necessary for hyperref to jump to the correct page
 }
@@ -297,8 +301,8 @@
 \pagestyle{thesis}
 \ifbool{headsepline}{\KOMAoption{headsepline}{true}}{}
 \PreventPackageFromLoading[\ClassError{\classname}{Package `fancyhdr' is
-incompatible\MessageBreak with this class}{The pagesyles are defined 
-	using package `scrlayer-scrpage', please consult the\MessageBreak 
+incompatible\MessageBreak with this class}{The pagesyles are defined
+	using package `scrlayer-scrpage', please consult the\MessageBreak
 KOMA-script documentation for details.}]{fancyhdr}
 
 
