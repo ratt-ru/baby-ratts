@@ -5,6 +5,7 @@
 % ========== Base Packages ==========
 \RequirePackage[utf8]{inputenc}
 \RequirePackage{graphicx}
+\RequirePackage{url}
 \RequirePackage{hyperref}
 \RequirePackage{fancyhdr}
 \RequirePackage{geometry}
@@ -15,6 +16,7 @@
 \RequirePackage{tikz}
 \usetikzlibrary{calc}
 \RequirePackage{minted}
+\RequirePackage[most]{tcolorbox}
 
 % ========== Color Scheme ==========
 \definecolor{ratt-primary}{HTML}{802474}
@@ -71,17 +73,17 @@
 \fancyhead[L]{
     \begin{tikzpicture}[remember picture,overlay]
         \node[anchor=east] at
-            ($(current page.north east)+(-15mm,-10mm)$) {\includegraphics[height=8mm]{logos/ratt-logo.png}};
+        ($(current page.north east)+(-15mm,-10mm)$) {\includegraphics[height=8mm]{logos/ratt-logo.png}};
         \draw [ratt-secondary, line width=0.5mm]
-            ($(current page.north west)+(15mm,-20mm)$) --
-            ($(current page.north east)+(-15mm,-20mm)$);
+        ($(current page.north west)+(15mm,-20mm)$) --
+        ($(current page.north east)+(-15mm,-20mm)$);
     \end{tikzpicture}
 }
 
 \fancyfoot[C]{
     \begin{tikzpicture}[remember picture,overlay]
         \fill[color=ratt-accent] (current page.south west) rectangle
-            ($(current page.south west)+(50mm,2mm)$);
+        ($(current page.south west)+(50mm,2mm)$);
     \end{tikzpicture}
     \color{section-gray}\thepage
 }
@@ -122,72 +124,157 @@
 
 % ========== Section Styling ==========
 \titleformat{\section}
-    {% format
-        \sffamily\Large\bfseries\color{ratt-primary}
-    }
-    {% label
-        \thesection
-    }
-    {% sep
-        3em
-    }
-    {% before-code
-    }
-    [% after-code
-        \vspace{1em}
-    ]
+{% format
+    \sffamily\Large\bfseries\color{ratt-primary}
+}
+{% label
+    \thesection
+}
+{% sep
+    3em
+}
+{% before-code
+}
+[% after-code
+    \vspace{1em}
+]
 
 \titleformat{\subsection}
-    {\sffamily\large\bfseries\color{ratt-secondary}}
-    {\thesubsection}
-    {2em}
-    {}
-    [\vspace{-0.5em}]
+{\sffamily\large\bfseries\color{ratt-secondary}}
+{\thesubsection}
+{2em}
+{}
+[\vspace{-0.5em}]
 
 \titleformat{\subsubsection}
-    {\sffamily\normalsize\bfseries\color{ratt-primary}} %
-    {}
-    {0pt}
-    {}
-    [\vspace{-0.5em}]
+{\sffamily\normalsize\bfseries\color{ratt-primary}} %
+{}
+{0pt}
+{}
+[\vspace{-0.5em}]
 
 % ========== Hyperlink Styling ==========
 \hypersetup{
     colorlinks=true,
-    linkcolor=ratt-primary,
-    urlcolor=ratt-secondary,
-    citecolor=ratt-secondary
+    linkcolor=ratt-primary,     % Color for internal links (like \hyperlink)
+    urlcolor=ratt-primary,      % Make URLs the same color as links
+    citecolor=ratt-secondary,
+    filecolor=ratt-primary,     % For \href to local files
+    menucolor=ratt-primary,     % For Acrobat menu items
+    runcolor=ratt-primary,      % For run links
+    allcolors=,                 % Leave empty, we want different types to have specific colors
+    pdfborderstyle={/S/U/W 1},  % Underline style for links
 }
+
+% Make URLs use the same font as hyperlinks
+\urlstyle{same}
+
+% =========- Line Spacing -=========-
+\onehalfspacing
 
 % ========== Custom Elements ==========
 \newcommand{\rattbox}[1]{
     \begin{center}
         \begin{tikzpicture}
             \node[rectangle,
-                  rounded corners=3mm,
-                  draw=ratt-primary,
-                  line width=1pt,
-                  inner ysep=10pt,
-                  inner xsep=15pt,
-                  fill=ratt-accent!20]
-                {\parbox{0.9\linewidth}{#1}};
+                rounded corners=3mm,
+                draw=ratt-primary,
+                line width=1pt,
+                inner ysep=10pt,
+                inner xsep=15pt,
+                fill=ratt-accent!20]
+            {\parbox{0.9\linewidth}{#1}};
         \end{tikzpicture}
     \end{center}
 }
 
-% =========- Line Spacing -=========-
-\onehalfspacing
 
-% ========= Custom Code Blocks ======
+% Define custom code style with more prominent purple theme
+\definecolor{ratt-code-bg}{HTML}{F5EEFA}         % Very light purple background
+\definecolor{ratt-code-frame}{HTML}{802474}      % Primary RATT purple for frame
+\definecolor{ratt-code-text}{HTML}{231123}       % Very dark purple-black for text
 
+% Basic minted configuration with improved contrast
 \setminted{
-  fontsize=\small,
-  frame=single,
-  framesep=10pt,
-  bgcolor=ratt-primary!20,
-  baselinestretch=1,
-  numbersep=5pt,
-  gobble=0,
-  tabsize=4,
-  breaklines,
+    fontsize=\small,
+    framerule=1.2pt,              % Slightly thicker frame line
+    framesep=10pt,
+    bgcolor=ratt-code-bg,         % Light purple background
+    baselinestretch=1.2,          % Better line spacing
+    tabsize=4,
+    breaklines=true,              % Enable line breaking
+    breakanywhere=true,           % Break anywhere when needed
+    breakautoindent=false,        % Don't indent after line break
+    linenos=false,                % Line numbers disabled for copy-paste friendliness
+    xleftmargin=12pt,             % Margin for left side
+    autogobble=true,              % Automatically remove common leading whitespace
+    style=tango,                  % A higher contrast style
+    encoding=utf8,                % Ensure UTF-8 support
+    highlightcolor=ratt-primary!30, % Use your primary color for highlights
 }
+
+% Customized style for Python - higher contrast
+\setminted[python]{
+    style=tango,
+}
+
+% Customized style for LaTeX
+\setminted[latex]{
+    style=tango,                  % Higher contrast style
+}
+
+% Customized style for bash/shell
+\setminted[bash]{
+    style=tango,                 % Dark style with good contrast
+}
+
+% Create a custom environment for important code snippets
+\newenvironment{rattcode}[2][]
+{\VerbatimEnvironment
+  \begin{tcolorbox}[
+    colback=ratt-code-bg,
+    colframe=ratt-primary,
+    boxrule=0.5mm,
+    arc=2mm,
+    title={#2},
+    fonttitle=\sffamily\small,
+    coltitle=white,
+    colbacktitle=ratt-primary,
+    before skip=10pt,
+    after skip=10pt,
+  ]
+  \begin{minted}[#1]{#2}}
+{\end{minted}\end{tcolorbox}}
+
+% Full frame version with purple theme
+\newenvironment{rattcodeframe}[2][]
+{\VerbatimEnvironment
+    \begin{tcolorbox}[
+            enhanced,
+            title={#2},
+            colback=ratt-code-bg,
+            colframe=ratt-primary,
+            boxrule=1pt,
+            arc=3mm,
+            fonttitle=\sffamily\small,
+            coltitle=white,
+            colbacktitle=ratt-primary,
+            attach boxed title to top left={xshift=8mm, yshift=-3mm},
+            boxed title style={sharp corners, boxrule=0pt},
+            left=10pt,
+            right=10pt,
+            top=10pt,
+            bottom=10pt,
+            breakable,
+            before skip=10pt,
+            after skip=10pt,
+        ]
+        \begin{minted}[#1]{#2}}
+{\end{minted}\end{tcolorbox}}
+
+\usemintedstyle{tango}
+
+% ========= Custom commands =========
+\newcommand{\code}[1]{\textcolor{ratt-primary}{\texttt{#1}}}
+\newcommand{\ratturl}[1]{{\color{ratt-primary}\href{#1}{#1}}}
+\newcommand{\ratthref}[2]{{\color{ratt-primary}\href{#2}{#1}}}
