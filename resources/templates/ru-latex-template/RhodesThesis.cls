@@ -72,15 +72,15 @@
 	\abovechapterskip
 	{\parindent \z@ \chapteralign \normalfont
 		\ifnum \c@secnumdepth >\m@ne
-		\if@mainmatter
-		\ifbool{chapteroneline}{%
-			\chapterfont \mdtChapapp\thechapter\autodot\enspace
-		}{%
-			\chapterprefixfont \@chapapp\space \thechapter
-			\par\nobreak
-			\chapterinbetweenskip
-		}%
-		\fi
+			\if@mainmatter
+				\ifbool{chapteroneline}{%
+					\chapterfont \mdtChapapp\thechapter\autodot\enspace
+				}{%
+					\chapterprefixfont \@chapapp\space \thechapter
+					\par\nobreak
+					\chapterinbetweenskip
+				}%
+			\fi
 		\fi
 		\interlinepenalty\@M%
 		\chapterfont #1\par\nobreak
@@ -98,7 +98,6 @@
 	}
 	\thispagestyle{\chapter@p@gestyle}
 }
-
 
 % Addchap provides unnumbered chapters with an entry in the table of contents as well as an updated header
 \ProvideDocumentCommand{\addchap}{ s o m }{%
@@ -119,7 +118,7 @@
 \ProvideDocumentCommand{\addsec}{ s o m }{%
 	\section*{#3}%
 	\markright{}%
-\IfBooleanTF{#1}{%
+	\IfBooleanTF{#1}{%
 	}{%
 		\IfNoValueTF{#2}{%
 			\addcontentsline{toc}{section}{#3}%
@@ -149,8 +148,8 @@
 
 \ifbool{toctoc}{% If the toctotoc options has been passed to the class, add the table of contents to the table of contents
 	\patchcmd{\tableofcontents}{\@starttoc{toc}%
-}{%
-	\addchaptertocentry{\contentsname}\@starttoc{toc}}{}{}%
+	}{%
+		\addchaptertocentry{\contentsname}\@starttoc{toc}}{}{}%
 }
 
 \patchcmd{\tableofcontents}{\MakeUppercase}{\MakeMarkcase}{}{}
@@ -213,9 +212,9 @@
 %----------------------------------------------------------------------------------------
 
 \NewDocumentCommand{\thesistitle} { o m }{%
- \IfValueTF{#1}{\def\shorttitle{#1}}{\def\shorttitle{#2}}%
- \def\@title{#2}%
- \def\ttitle{#2}%
+	\IfValueTF{#1}{\def\shorttitle{#1}}{\def\shorttitle{#2}}%
+	\def\@title{#2}%
+	\def\ttitle{#2}%
 }
 \DeclareDocumentCommand{\author}{m}{\newcommand{\authorname}{#1}\renewcommand{\@author}{#1}}
 \NewDocumentCommand{\supervisor}{m}{\newcommand{\supname}{#1}}
@@ -301,25 +300,25 @@
 \pagestyle{thesis}
 \ifbool{headsepline}{\KOMAoption{headsepline}{true}}{}
 \PreventPackageFromLoading[\ClassError{\classname}{Package `fancyhdr' is
-incompatible\MessageBreak with this class}{The pagesyles are defined
-	using package `scrlayer-scrpage', please consult the\MessageBreak
-KOMA-script documentation for details.}]{fancyhdr}
+		incompatible\MessageBreak with this class}{The pagesyles are defined
+		using package `scrlayer-scrpage', please consult the\MessageBreak
+		KOMA-script documentation for details.}]{fancyhdr}
 
 
 \newcommand{\blank@p@gestyle}{empty}
 \newcommand{\chapter@p@gestyle}{plain}
 \NewDocumentCommand{\blankpagestyle}{ m }{%
 	\ClassWarning{\classname}{\string\blankpagestyle\space is
-	obsolete,\MessageBreak use \string\setblankpagestyle \space  instead}\renewcommand{\blank@p@gestyle}{}{#1}
+		obsolete,\MessageBreak use \string\setblankpagestyle \space  instead}\renewcommand{\blank@p@gestyle}{}{#1}
 }
 \NewDocumentCommand{\setblankpagestyle}{ m }{\renewcommand{\blank@p@gestyle}{#1}}
 \NewDocumentCommand{\setchapterpagestyle}{ m }{\renewcommand{\chapter@p@gestyle}{#1}}
 
 \DeclareDocumentCommand\cleardoublepage{}{\clearpage\if@twoside \ifodd\c@page\else
-	\hbox{}
-	\thispagestyle{\blank@p@gestyle}
-	\newpage
-	\if@twocolumn\hbox{}\newpage\fi\fi\fi%
+			\hbox{}
+			\thispagestyle{\blank@p@gestyle}
+			\newpage
+			\if@twocolumn\hbox{}\newpage\fi\fi\fi%
 }
 
 %----------------------------------------------------------------------------------------
@@ -432,7 +431,7 @@ KOMA-script documentation for details.}]{fancyhdr}
 \ifbool{consistentlayout}{
 	\DeclareDocumentEnvironment{declaration}{}{
 		\addchap*{\authorshipname}
-		}{}%
+	}{}%
 }{
 	\DeclareDocumentEnvironment{declaration}{}{
 		\checktoopen
@@ -450,11 +449,11 @@ KOMA-script documentation for details.}]{fancyhdr}
 \ifbool{consistentlayout}{
 	\DeclareDocumentCommand{\dedicatory}{
 		m O{\vspace*{.7\textheight} }  }{
-			\checktoopen\tttypeout{Dedicatory}
-			\markboth{}{}
-			#2
-			{\hfill\parbox{.4\textwidth}{\flushright#1\par}}
-		}
+		\checktoopen\tttypeout{Dedicatory}
+		\markboth{}{}
+		#2
+		{\hfill\parbox{.4\textwidth}{\flushright#1\par}}
+	}
 }{
 	\newcommand\dedicatory[1]{
 		\checktoopen
@@ -467,33 +466,33 @@ KOMA-script documentation for details.}]{fancyhdr}
 }
 
 \DeclareDocumentEnvironment{dedication}{}{%
-		\checktoopen
-		\tttypeout{Dedication}
-		\thispagestyle{plain}
-		\begin{center}{\huge\textbf{Dedication}\par}\end{center}
-	}
-	{
-		\vfil\vfil\null
-	}
+	\checktoopen
+	\tttypeout{Dedication}
+	\thispagestyle{plain}
+	\begin{center}{\huge\textbf{Dedication}\par}\end{center}
+}
+{
+	\vfil\vfil\null
+}
 
 \ifbool{hyperrefsupport}{% If the nohyperref class option has not been specified
-\AtEndPreamble{\RequirePackage{hyperref}
-\hypersetup{pdfencoding=auto, psdextra=true, pdfpagemode={UseOutlines},
-bookmarksopen=true,
-bookmarksopenlevel=0,
-hypertexnames=false,
-colorlinks=true,% Set to false to disable coloring links
-citecolor=magenta,% The color of citations
-linkcolor=red,% The color of references to document elements (sections, figures, etc)
-urlcolor=mdtRed,% The color of hyperlinks (URLs)
-pdfstartview={FitV},
-unicode,
-breaklinks=true,
-}
+	\AtEndPreamble{\RequirePackage{hyperref}
+		\hypersetup{pdfencoding=auto, psdextra=true, pdfpagemode={UseOutlines},
+			bookmarksopen=true,
+			bookmarksopenlevel=0,
+			hypertexnames=false,
+			colorlinks=true,% Set to false to disable coloring links
+			citecolor=magenta,% The color of citations
+			linkcolor=red,% The color of references to document elements (sections, figures, etc)
+			urlcolor=mdtRed,% The color of hyperlinks (URLs)
+			pdfstartview={FitV},
+			unicode,
+			breaklinks=true,
+		}
 
-\pdfstringdefDisableCommands{% If there is an explicit linebreak in a section heading (or anything printed to the pdf-bookmarks), it is replaced by a space
-	\let\\\space%
-}
+		\pdfstringdefDisableCommands{% If there is an explicit linebreak in a section heading (or anything printed to the pdf-bookmarks), it is replaced by a space
+			\let\\\space%
+		}
 	}
 }{%nothing
 }
