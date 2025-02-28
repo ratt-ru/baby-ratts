@@ -1,0 +1,472 @@
+% !TEX root = main.tex
+\documentclass[
+11pt, % The default document font size, options: 10pt, 11pt, 12pt
+%oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
+english, % ngerman for German
+onehalfspacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
+%draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
+%nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
+%liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
+%toctotoc, % Uncomment to add the main table of contents to the table of contents
+%parskip, % Uncomment to add space between paragraphs
+%nohyperref, % Uncomment to not load the hyperref package
+headsepline, % Uncomment to get a line under the header
+%chapterinoneline, % Uncomment to place the chapter title next to the number on one line
+%consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
+]{MastersDoctoralThesis} % The class file specifying the document structure
+\usepackage[utf8]{inputenc} % Required for inputting international characters
+\usepackage[T1]{fontenc} % Output font encoding for international characters
+\usepackage{layouts}
+\usepackage{ae,aecompl}
+\usepackage[autostyle=true]{csquotes}
+\usepackage[normalem]{ulem}
+\usepackage[%
+    final,
+]{changes}
+\usepackage[style=ieee,maxcitenames=3,mincitenames=1,maxbibnames=6,minbibnames=6]{biblatex}
+% \usepackage[style=authoryear-icomp, maxnames=2, backend=bibtex,ibidtracker=false]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+\setlength\bibitemsep{0.4\baselineskip}
+\addbibresource{Main/Bibliography/Masters.bib} % The filename of the bibliography
+
+% Packages
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[math]{cellspace} % Necessary for adjusting matrix typesetting.
+\usepackage{upgreek}
+\usepackage{mathtools}
+\usepackage{xcolor}
+\usepackage{oplotsymbl}
+\newcolumntype{x}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
+\usepackage{enumitem}
+\usepackage{geometry}
+% \usepackage[square, comma, numbers, sort&compress]{natbib}
+
+\usepackage{bm}
+\usepackage{relsize}
+\usepackage{tikz}
+\usepackage{bbm}
+\usepackage{multirow}
+\usepackage{blindtext}
+\usepackage{titlesec}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+\usepackage{subdepth}
+\usepackage{stmaryrd}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[figuresleft]{rotating}
+\usepackage{dirtytalk}
+\usepackage[acronym,noredefwarn,style=super,nonumberlist,toc,nogroupskip=true]{glossaries}
+\usepackage{tabularx}
+\usepackage{listings}
+\usepackage[htt]{hyphenat}
+\usepackage{makecell}
+\usepackage{xspace}
+
+% Set some matrix properties to ensure neat typesetting of complicated matrix expressions. 
+
+\cellspacetoplimit 2pt
+\cellspacebottomlimit 2pt
+\setlength{\arraycolsep}{4pt}
+
+\usepackage[e]{esvect}
+\usepackage{datetime}
+\usepackage{fancyvrb}
+\usepackage{bibentry}
+\usepackage{subcaption}
+\usepackage{afterpage}
+\usepackage{float}
+\usepackage{romannum}
+\usepackage[multiple]{footmisc}
+
+\usepackage{array}
+\newcolumntype{L}{>{\raggedright\arraybackslash}m{5cm}}
+\newcolumntype{M}{>{\centering\arraybackslash}m{2cm}}
+
+\newdateformat{monthyeardate}{%
+  \monthname[\THEMONTH], \THEYEAR}
+
+% Set up some global maths stuff.
+\DeclareMathOperator{\vect}{vec}
+\DeclareMathOperator*{\argmax}{\arg\!\max}
+\DeclareMathOperator*{\argmin}{\arg\!\min}
+
+% \newcommand{\brouw}[1]{\textcolor{red}{#1}}
+\newcommand{\brouw}[1]{\textcolor{black}{#1}}
+
+% \newcommand{\wiaux}[1]{\textcolor{orange}{#1}}
+\newcommand{\wiaux}[1]{\textcolor{black}{#1}}
+
+% \newcommand{\cotton}[1]{\textcolor{green}{#1}}
+\newcommand{\cotton}[1]{\textcolor{black}{#1}}
+
+%----------------------------------------------------------------------------------------
+%	MARGIN SETTINGS
+%----------------------------------------------------------------------------------------
+
+\geometry{
+	paper=a4paper, % Change to letterpaper for US letter
+	inner=2.5cm, % Inner margin
+	outer=2.5cm, % Outer margin, def:3.8cm
+	bindingoffset=.5cm, % Binding offset
+	top=1.5cm, % Top margin
+	bottom=1.5cm, % Bottom margin
+	%showframe, % Uncomment to show how the type block is set on the page
+}
+
+
+\newcolumntype{b}{>{\hsize=1.3\hsize}X}  % For the bigger column
+\newcolumntype{s}{>{\hsize=0.75\hsize}X}  % For the smaller columns
+
+% Paragraph Settings
+% \setlength{\parskip}{\baselineskip}
+% \setlength{\parindent}{0pt}
+
+% Section and TOC depth numbering
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+
+% New commands
+
+% 1. Short-hand for vectors/matrices
+\def\*#1{\boldsymbol{\mathrm{#1}}}
+
+% 2. Inner Product
+\newcommand{\inpdt}[2]{\langle\,#1,#2\,\rangle}
+
+% 3. Kronecker Product
+\newcommand{\kron}[2]{\langle#1#2\rangle}
+
+% 4. Redefine section headers for cleveref
+\crefformat{section}{\S#2#1#3}
+\crefformat{subsection}{\S#2#1#3}
+\crefformat{subsubsection}{\S#2#1#3}
+
+% 5. Math environments
+\newtheoremstyle{customdefstyle}
+  {1cm} % Space above
+  {1cm} % Space below
+  {}      % Body font (empty for default, upright font)
+  {}      % Indent amount (empty = no indent, \parindent = para indent)
+  {\bfseries} % Theorem head font
+  {.}     % Punctuation after theorem head
+  { }     % Space after theorem head (space or newline)
+  {\thmname{#1}\thmnumber{ #2}\thmnote{ (\bfseries#3)}}      % Theorem head spec (empty = 'normal')
+
+\theoremstyle{customdefstyle}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{theoremProof}[theorem]{Proof}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{property}[theorem]{Property}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{algorithm}[theorem]{Algorithm}
+
+% 7. Shorthand for \texttt
+\def\^#1{\texttt{#1}}
+  
+% 10. Todo command for when future Brian needs to deal with it
+\newcommand{\TODO}{\textbf{\#TODO}}
+
+% 11. Probability function redefine as set
+\newcommand{\Prb}[1]{\Pr\{{#1}\}}
+
+% 12. Shorthand for \mathrm
+\def\R#1{\mathrm{#1}}
+
+% 13. Statistical measures
+\newcommand{\Exp}[1]{\mathrm{E}\left[{#1}\right]}
+\newcommand{\Var}[1]{\mathrm{Var}\left[{#1}\right]}
+\newcommand{\Cov}[2]{\mathrm{Cov}\left[{#1}, {#2}\right]}
+\newcommand{\CovV}[1]{\mathrm{Cov}\left[{#1}\right]}
+\newcommand{\Den}[2]{\mathrm{p}\left(#1\;\middle|\;#2\right)}
+
+% 14. Quick matrix
+\newcommand\m[1]{\begin{bmatrix}#1\end{bmatrix}} 
+
+% 15. Indicate lower triangle indexing
+\def\Low#1{\overset{'}{#1}}
+
+% 16. Commands for argmin and argmax
+% \DeclareMathOperator*{\argmax}{arg\,max}
+% \DeclareMathOperator*{\argmin}{arg\,min}
+
+% 18. Change enumitem
+\renewcommand{\labelenumi}{\arabic{enumi}.)}
+\renewcommand{\labelenumii}{\arabic{enumi}.\arabic{enumii})}
+\renewcommand{\labelenumiii}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii})}
+\renewcommand{\labelenumiv}{\arabic{enumi}.\arabic{enumii}.\arabic{enumiii}.\arabic{enumiv})}
+
+% 19. Builders
+\newcommand{\setbuild}[2]{\left\{\;#1\;\middle|\;#2\;\right\}}
+\newcommand{\vecbuild}[2]{\left[\;#1\;\middle|\;#2\;\right]}
+\newcommand{\ordbuild}[2]{\left(\;#1\;\middle|\;#2\;\right)}
+
+% 20. Text-display operators
+\newcommand{\diag}{\mathrm{diag}}
+
+% 21. Common math symbols
+\newcommand{\Nant}{{N_\text{ant}}}
+\newcommand{\Nbl}{{N_\text{bl}}}
+\newcommand{\Ntime}{{N_\text{time}}}
+\newcommand{\Nsrc}{{N_\text{src}}}
+\newcommand{\Tint}{{\Delta_t}}
+\newcommand{\Sigf}{{\sigma_Q}}
+\newcommand{\RSet}{{\mathbb{R}}}
+\newcommand{\NSet}{{\mathbb{N}}}
+\newcommand{\CSet}{{\mathbb{C}}}
+\newcommand{\ASet}{{\mathbb{A}}}
+\newcommand{\BSet}{{\mathbb{B}}}
+\newcommand{\TSet}{{\mathbb{T}}}
+\newcommand{\Jy}{{\mathrm{Jy}}}
+\newcommand{\mJy}{{\mathrm{mJy}}}
+\newcommand{\uJy}{{\mathrm{\mu Jy}}}
+\newcommand{\HH}{\hyperref[tb:5:calibration_runs:scenario_codes]{H100}\xspace}
+\newcommand{\HE}{\hyperref[tb:5:calibration_runs:scenario_codes]{H80}\xspace}
+\newcommand{\LH}{\hyperref[tb:5:calibration_runs:scenario_codes]{L100}\xspace}
+\newcommand{\LE}{\hyperref[tb:5:calibration_runs:scenario_codes]{L80}\xspace}
+
+% Define custom colors with darker shades
+\definecolor{addedcolor}{RGB}{0,100,0}      % Dark green for insertions
+\definecolor{deletedcolor}{RGB}{139,0,0}    % Dark red (dark red) for removals
+\definecolor{replacedcolor}{RGB}{184,134,11} % Dark goldenrod for edits
+\definecolor{commentcolor}{RGB}{64,64,64}
+
+\setaddedmarkup{\textcolor{addedcolor}{{$\bm{\big[}$}\textbf{#1}{$\bm{\big]}$}}}
+\setdeletedmarkup{\textcolor{deletedcolor}{{$\bm{\big[}$}\textit{#1}{$\bm{\big]}$}}}
+
+% List of Symbols and Acronyms
+\newglossary[slg]{symbol}{sbl}{sbl}{List of Symbols}
+\newglossary[sft]{software}{sfe}{sfe}{List of Online Sources}
+
+\makeatletter
+\newcommand*{\glsplainhyperlink}[2]{%
+    \begingroup%
+      \hypersetup{hidelinks}%
+      \hyperlink{#1}{#2}%
+    \endgroup%
+}
+\let\@glslink\glsplainhyperlink
+\makeatother
+
+\setlength{\glsdescwidth}{0.5\textwidth}
+\renewcommand*{\arraystretch}{1.3}
+
+% Load Glossary Entries
+\makenoidxglossaries 
+\loadglsentries{Main/List_of_Acronyms}
+\loadglsentries{Main/List_of_Symbols}
+\loadglsentries{Main/List_of_Online_Sources}
+
+%----------------------------------------------------------------------------------------
+%	THESIS INFORMATION
+%----------------------------------------------------------------------------------------
+
+\thesistitle{KalCal: A Novel Calibration Framework for Radio Interferometry using the Kalman Filter and Smoother} % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
+\supervisor{Dr Landman \textsc{Bester}} % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
+\cosupervisor{Dr Jonathan \textsc{Kenyon} \& Prof Oleg \textsc{Smirnov}}
+\examiner{} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
+\degree{Master of Science} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
+\author{Brian \textsc{Welman}} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
+\addresses{} % Your address, this is not currently used anywhere in the template, print it elsewhere with \addressname
+
+\subject{Radio Interferometry} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
+\keywords{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
+\university{\href{http://www.ru.ac.za}{Rhodes University}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
+\department{\href{http://www.ru.ac.za/physicsandelectronics}{Department of Physics and Electronics}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
+\group{\href{http://www.ratt-ru.org/}{Centre for Radio Astronomy Techniques and Technologies}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
+\faculty{\href{https://www.ru.ac.za/facultyofscience/}{Faculty of Science}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
+
+\AtBeginDocument{
+\hypersetup{pdftitle=\ttitle} % Set the PDF's title to your title
+\hypersetup{pdfauthor=\authorname} % Set the PDF's author to your name
+\hypersetup{pdfkeywords=\keywordnames} % Set the PDF's keywords to your keywords
+}
+
+\begin{document}
+\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+
+\pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
+
+%----------------------------------------------------------------------------------------
+%	TITLE PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{titlepage}
+\begin{center}
+
+\vspace*{.06\textheight}
+\includegraphics[width=0.5\textwidth]{Main/rhodes_logo.pdf}
+\vspace*{.06\textheight}
+%{\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
+%\textsc{\Large Doctoral Thesis}\\[0.5cm] % Thesis type
+
+\HRule \\[0.4cm] % Horizontal line
+{\LARGE \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
+\HRule \\[1cm] % Horizontal line
+ 
+\begin{minipage}[t]{0.3\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+{\authorname} % Author name - remove the \href bracket to remove the link
+\end{flushleft}
+\end{minipage}
+\begin{minipage}[t]{0.6\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+{\supname} \\
+\emph{Co-supervisor(s):} \\ 
+\cosupname % Supervisor name - remove the \href bracket to remove the link
+\end{flushright}
+\end{minipage}\\[1cm]
+ 
+% \vfill
+
+\large \textit{A thesis submitted in fulfilment of the requirements\\ for the degree of }\degreename \\[0.3cm] % University requirement text
+% \\[0.3cm]
+\textit{in the}\\[0.3cm]
+\groupname\\\deptname\\[0.3cm] % Research group name and department name
+\textit{of}\\[0.3cm]
+\univname\\[0.3cm]
+
+\large \textit{The financial assistance of the National Research Foundation (NRF) towards this research is hereby acknowledged. Opinions expressed and conclusions arrived at, are those of the author and are not necessarily to be attributed to the NRF.}\\[0.2cm]
+{\large \monthyeardate\today}\\[4cm] % Date
+%\includegraphics{Logo} % University/department logo - uncomment to place it
+ 
+\vfill
+\end{center}
+\end{titlepage}
+
+\let\cleardoublepage\clearpage
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{abstract}
+\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+\doublespacing
+    Calibration in radio interferometry is essential for correcting measurement errors. Traditional methods employ maximum likelihood techniques and non-linear least squares solvers but face challenges due to the data volumes and increased noise sensitivity of contemporary instruments such as MeerKAT. A common approach for mitigating these issues is using ``solution intervals", which helps manage the data volume and reduces overfitting. However, inappropriate interval sizes can degrade calibration quality, and determining optimal sizes is challenging, often relying on brute-force methods.
+
+    This study introduces \acrfull{kalcal}, a new framework for calibration that combines the Kalman Filter, Kalman Smoother, and the energy function: the negative logarithm of the Bayesian evidence. \acrshort{kalcal} offers Bayesian-optimal solutions as probability densities and models calibration effects with lower computational requirements than iterative approaches. Unlike traditional methods, which require all the data for a particular solution to be in memory simultaneously, \acrshort{kalcal}'s recursive computations only need a single pass through the data with appropriate prior information. The energy function provides the means for \acrshort{kalcal} to determine this prior information. 
+    
+    Theoretical contributions include additions to complex optimisation literature and the ``Kalman-Woodbury Identity" that reformulates the traditional Kalman Filter. A Python implementation of the \acrshort{kalcal} framework was benchmarked against solution intervals as implemented in the QuartiCal package. Simulations show \acrshort{kalcal} matching solution intervals in high \acrfull{SNR} scenarios and surpassing them in low \acrshort{SNR} conditions. Moreover, the energy function produced minima that coincide with \acrshort{kalcal}'s \acrfull{MSE} on the true gain signal. This result is significant as the \acrshort{MSE} is unavailable in real applications. Further research is needed to assess the computational feasibility and intricacies of \acrshort{kalcal}.
+\end{abstract}
+
+%----------------------------------------------------------------------------------------
+%	DECLARATION PAGE
+%----------------------------------------------------------------------------------------
+
+\begin{declaration}
+\addchaptertocentry{\authorshipname} % Add the declaration to the table of contents
+\noindent I, \authorname, declare that this thesis titled, \enquote{\ttitle} and the work presented in it are my own. I confirm that:
+
+\begin{itemize} 
+\item This work was done wholly or mainly while in candidature for a research degree at this University.
+\item Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
+\item Where I have consulted the published work of others, this is always clearly attributed.
+\item Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
+\item I have acknowledged all main sources of help.
+\item Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
+\end{itemize}
+ 
+\noindent Signed: \authorname \\
+\rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
+ 
+\noindent Date: \monthyeardate\today\\
+\rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
+\end{declaration}
+
+% \cleardoublepage
+\let\cleardoublepage\clearpage
+
+%----------------------------------------------------------------------------------------
+%	QUOTATION PAGE
+%----------------------------------------------------------------------------------------
+
+\vspace*{0.2\textheight}
+
+%\noindent\enquote{\itshape Never be so focused on picking a lock that you forget kicking down the door is also an option.}\bigbreak
+
+%\hfill ― Mark Lawrence, Grey Sister
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+\begin{acknowledgements}
+\addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
+    This thesis is the culmination of the combined efforts and support of numerous individuals and institutions, to whom I owe a profound debt of gratitude. I extend my sincere thanks to Rhodes University, \acrshort{SARAO}, and NRF for their financial support and the academic opportunities they have provided. The RATT research group deserves special mention; my fellow RATTs have been instrumental in this journey, enriching it with invaluable knowledge, insightful discussions, and memorable social gatherings. I am profoundly grateful for the learning and camaraderie experienced. I am indebted to Dr. Ulrich Sob, whose expert guidance with my simulated experiment, calibration, and radio interferometry has been indispensable. Similarly, Cyndie Russeeawon's unwavering support and assistance, both theoretically and practically, have been invaluable, not only professionally but also in fostering a deep friendship. To Prof. Oleg Smirnov, I express my deepest gratitude for the opportunity to undertake this project under RATT. Your patience, wisdom, belief in my abilities, and kindness, especially during challenging times, have been a beacon of support. Dr. Jonathan Kenyon's contributions to my thesis have been immeasurable. From programming assistance to meticulous reviews of my academic writing, the dedication and effort you have invested have been priceless. Finally, a massive thank you to Dr. Landman Bester. Although we debated many aspects of the work, I am immensely thankful for your experience, knowledge, guidance, and patience, which, in conjunction with Dr. Kenyon, have been crucial to the fruition and refinement of this work. I am highly grateful for your supervision of this work and for empowering me with the confidence and critical thinking skills essential for navigating the complexities of this field.
+
+    To my family, spread from Bermuda to England, Mozambique, and Graaff-Reinet, the love and support you have extended have been a cornerstone of my journey. Nigel and Nita Hallowes, your invaluable support, especially in the latter stages, whether through family assistance, babysitting, or the simple act of preparing a meal, has been a tremendous source of strength. You have my deepest thanks and love. To Mom, your endless love, kindness, and encouragement are highly cherished. The sacrifices you've made for me to have this opportunity are immeasurable; for that, my love and gratitude know no bounds. To Dad, thank you for the meaningful heart-to-hearts about my work and life. Your unwavering belief in me and your motivational spirit during tough times have been foundational. Your love and sacrifices have paved the way for this achievement, and for that, I am eternally grateful. To my dearest Freya, Thor, Minos, Bastet, and Hera, your unconditional love and comforting presence have been a source of joy and solace. I love all of you so much. Finally and most importantly, I want to thank my wife, Lola and my son, Björn. To my son, I am so lucky to be your dad and to watch you grow up. I feel so privileged that after work, I got to spend the rest of my time with you. Even as you grow up, I will never forget the healing moments we had together, especially when watching rally racing videos or dinosaur documentaries or going to the arcade or skate-park. I hope this papa makes you proud, and I love you so much. To my beautiful wife, you are the number one reason why I was able to finish this thesis. You sacrificed so much to allow me to finish this work, even when times were tough. When I was down and weak, you lifted me up and kept me going. You picked up where I could not. You made me hundreds of cups of amazing coffee and tea. You provided me so many opportunities to complete my work. I remember everything you did for me, and I will always be indebted to you for this. I hope I have made you proud and that you can share the infinite love and kindness you afforded me when you are in need. You truly are the most amazing person ever. Thank you, my love.
+\end{acknowledgements}
+
+\cleardoublepage
+\begin{center}
+\noindent\textit{\Large To my beautiful wife, \emph{Lola},}\\[1cm]
+\textit{\Large and my beloved son, \emph{Björn},}\\[1cm]
+\textit{\Large for their endless love, support, and inspiration.}    
+\end{center}
+\vfill
+
+\begin{center}
+    \Large
+    \noindent\enquote{\itshape There is nothing I cannot teach myself.}\bigbreak
+\end{center}
+
+\cleardoublepage
+%---------------------------------- ------------------------------------------------------
+%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%----------------------------------------------------------------------------------------
+
+\setcounter{tocdepth}{2}
+\tableofcontents % Prints the main table of contents
+
+\listoffigures % Prints the list of figures
+
+\listoftables % Prints the list of tables
+
+\glsaddallunused
+\printnoidxglossary[type=acronym, title={List of Abbreviations and Acronyms}, sort=standard]
+\printnoidxglossary[type=symbol, title={List of Symbols}, sort=def]
+\printnoidxglossary[type=software, title={List of Online Sources}, sort=standard]
+
+
+\mainmatter
+\pagestyle{thesis}
+
+\listofchanges
+
+% Chapter 1 -Introduction
+\include{Main/Chapters/Chapter_1_Introduction}
+
+% Chapter 2 - Radio Interferometry
+% \input{Main/Chapters/Chapter_2_RIME.tex}
+
+% Chapter 3 - Kalman Filters and Smoothers
+\include{Main/Chapters/Chapter_3_KalmanFiltersAndSmoothers}
+
+% Chapter 4 - kalcal
+\include{Main/Chapters/Chapter_4_kalcal}
+
+% Chapter 5 - Application
+\include{Main/Chapters/Chapter_5_Application}
+
+% Chapter 6 - Conclusion
+\include{Main/Chapters/Chapter_6_Conclusion}
+
+% Appendices
+\appendix
+\include{Main/Appendices/Appendix_A}
+\include{Main/Appendices/Appendix_B}
+% \include{Main/Appendices/Appendix_C}
+% \include{Main/Appendices/Appendix_D}
+
+% Bibliography
+% \bibliography{Main/Bibliography/Masters}
+\printbibliography[heading=bibintoc]
+\end{document}
