@@ -29,9 +29,9 @@
 %	CLASS DEFINITION AND PARAMETERS
 %----------------------------------------------------------------------------------------
 
-\NeedsTeXFormat{LaTeX2e}[1996/12/01]
-\newcommand{\classname}{MastersDoctoralThesis}
-\ProvidesClass{\classname}[2016/11/22 v1.5 LaTeXTemplates.com]
+\NeedsTeXFormat{LaTeX2e}[2020/10/01]
+\newcommand{\classname}{RhodesThesis}
+\ProvidesClass{\classname}[2025/02/28 v1.0 RATT]
 \providecommand{\baseclass}{book}
 \RequirePackage{etoolbox}
 \RequirePackage{xparse}
@@ -59,7 +59,7 @@
 
 \LoadClass{\baseclass}
 
-%  Simple interface for the user  to customize the chapter titles
+% Simple interface for the user to customize the chapter titles
 \ProvideDocumentCommand{\abovechapterskip}{}{\vspace*{20pt}}
 \ProvideDocumentCommand{\chapterbelowskip}{}{\vspace*{40pt}}
 \ProvideDocumentCommand{\chapterinbetweenskip}{}{\vspace*{20pt}}
