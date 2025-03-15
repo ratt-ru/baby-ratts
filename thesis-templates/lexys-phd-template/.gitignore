@@ -18,7 +18,7 @@
 *.html
 
 readme*
-*vscode/*
+vscode/*
 orig-manual-bib
 # texstudio workspace
 *.txss

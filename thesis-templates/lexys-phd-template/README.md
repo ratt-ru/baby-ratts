@@ -61,14 +61,20 @@ The template directory is ordered as follows:
 
 </code>
 
-The files in **green** are the *parts of the template* you can and should edit.
+The files in **green** are the *parts of the template* you can and should edit:
 - `classicthesis-config.tex`: The various packages imported into the templates, colour declarations etc are in this file. You can add your own imports here
 - `your-custom-commands.tex`: As the name suggests, add your custom commands here for easy access. For example, you can declare aliases of your mostly used commands here
 - `main.tex`: This is the file that controls everything else. Here's where rendering of certain chapters can be disabled. New chapters to be rendered should also be added here.
 - `front_back_matter` directory contains files of different introductory/ finale texts. They're clearly labelled. You can't miss your way.
+
+-------
 
 `appendices / bibs /chapters / figures / snippets`: these are defined by you. You're free to delete and add things as you see fit. These are the contents of your thesis.
 
 
 The files in the pink (*.Otf) are the fonts used for this thesis, don't touch them and DO NOT DELETE!
 The files in red are the template styling files DO NOT TOUCH DO NOT DELETE, unless of course you know what you're doing.
+
+
+-------
+A sample PDF of how the final thesis will look [like is here](./main.pdf)
