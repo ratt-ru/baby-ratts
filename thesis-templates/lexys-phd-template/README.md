@@ -16,50 +16,49 @@ The template directory is ordered as follows:
 
 ----
 
-<code>
-├── <span style="color: green;"> main.tex </span>
-├── <span style="color: green;"> your-custom-commands.tex </span>
-├── <span style="color: green;"> classicthesis-config.tex </span>
+```
++├──main.tex
++├──your-custom-commands.tex
++├──classicthesis-config.tex
 ├── front_back_matter
-│   ├── <span style="color: green;"> Abstract.tex </span>
-│   ├── <span style="color: green;"> Acknowledgments.tex </span>
-│   ├── <span style="color: green;"> Bibliography.tex </span>
-│   ├── <span style="color: green;"> Colophon.tex </span>
-│   ├── <span style="color: green;"> Contents.tex </span>
-│   ├── <span style="color: green;"> Declaration.tex </span>
-│   ├── <span style="color: green;"> Dedication.tex </span>
-│   ├── <span style="color: green;"> DirtyTitlepage.tex </span>
-│   ├── <span style="color: green;"> Publications.tex </span>
-│   ├── <span style="color: green;"> Titleback.tex </span>
-│   └── <span style="color: green;"> Titlepage.tex </span>
-├── appendices
-│   └── AppendixA.tex
-├── bibs
-│   ├── publications.bib
-│   └── thesis.bib
-├── chapters
-│   └── chapter_1.tex
-├── figures
-│   ├── chapter_1
-│   │   ├── guidebook-phd.png
-│   │   ├── no-sleep-for-the-wicked.jpg
-│   │   ├── scientists.jpeg
-│   │   └── start.jpg
-│   └── title
-│       ├── ratt-logo.png
-│       └── rhodes-logo.png
-├── snippets
-│   └── some-noise.reg
-├── <span style="color: red"> classicthesis-arsclassica.sty </span>
-├── <span style="color: red"> classicthesis.sty </span>
-├── <span style="color: pink"> baskervaldadfstd-bolditalic.otf </span>
-├── <span style="color: pink"> baskervaldadfstd-bold.otf </span>
-├── <span style="color: pink"> baskervaldadfstd-heavyitalic.otf </span>
-├── <span style="color: pink"> baskervaldadfstd-heavy.otf </span>
-├── <span style="color: pink"> baskervaldadfstd-italic.otf </span>
-└── <span style="color: pink"> baskervaldadfstd-regular.otf  </span>
-
-</code>
++│   ├──Abstract.tex
++│   ├──Acknowledgments.tex
++│   ├──Bibliography.tex
++│   ├──Colophon.tex
++│   ├──Contents.tex
++│   ├──Declaration.tex
++│   ├──Dedication.tex
++│   ├──DirtyTitlepage.tex
++│   ├──Publications.tex
++│   ├──Titleback.tex
++│   └──Titlepage.tex
+#├── appendices
+#│   └── AppendixA.tex
+#├── bibs
+#│   ├── publications.bib
+#│   └── thesis.bib
+#├── chapters
+#│   └── chapter_1.tex
+#├── figures
+#│   ├── chapter_1
+#│   │   ├── guidebook-phd.png
+#│   │   ├── no-sleep-for-the-wicked.jpg
+#│   │   ├── scientists.jpeg
+#│   │   └── start.jpg
+#│   └── title
+#│       ├── ratt-logo.png
+#│       └── rhodes-logo.png
+#├── snippets
+#│   └── some-noise.reg
+-├── classicthesis-arsclassica.sty
+-├── classicthesis.sty
+!├── baskervaldadfstd-bolditalic.otf
+!├── baskervaldadfstd-bold.otf
+!├── baskervaldadfstd-heavyitalic.otf
+!├── baskervaldadfstd-heavy.otf
+!├── baskervaldadfstd-italic.otf
+!└── baskervaldadfstd-regular.otf 
+```
 
 The files in **green** are the *parts of the template* you can and should edit:
 - `classicthesis-config.tex`: The various packages imported into the templates, colour declarations etc are in this file. You can add your own imports here
