@@ -76,4 +76,4 @@ The files in red are the template styling files DO NOT TOUCH DO NOT DELETE, unle
 
 
 -------
-A sample PDF of how the final thesis will look [like is here](./main.pdf)
+A sample PDF of how the final thesis will look [like is here](./thesis/main.pdf)
