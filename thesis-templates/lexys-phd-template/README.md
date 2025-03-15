@@ -16,7 +16,7 @@ The template directory is ordered as follows:
 
 ----
 
-```
+```diff
 +├──main.tex
 +├──your-custom-commands.tex
 +├──classicthesis-config.tex
@@ -32,24 +32,24 @@ The template directory is ordered as follows:
 +│   ├──Publications.tex
 +│   ├──Titleback.tex
 +│   └──Titlepage.tex
-#├── appendices
-#│   └── AppendixA.tex
-#├── bibs
-#│   ├── publications.bib
-#│   └── thesis.bib
-#├── chapters
-#│   └── chapter_1.tex
-#├── figures
-#│   ├── chapter_1
-#│   │   ├── guidebook-phd.png
-#│   │   ├── no-sleep-for-the-wicked.jpg
-#│   │   ├── scientists.jpeg
-#│   │   └── start.jpg
-#│   └── title
-#│       ├── ratt-logo.png
-#│       └── rhodes-logo.png
-#├── snippets
-#│   └── some-noise.reg
+@├── appendices
+@│   └── AppendixA.tex
+@├── bibs
+@│   ├── publications.bib
+@│   └── thesis.bib
+@├── chapters
+@│   └── chapter_1.tex
+@├── figures
+@│   ├── chapter_1
+@│   │   ├── guidebook-phd.png
+@│   │   ├── no-sleep-for-the-wicked.jpg
+@│   │   ├── scientists.jpeg
+@│   │   └── start.jpg
+@│   └── title
+@│       ├── ratt-logo.png
+@│       └── rhodes-logo.png
+@├── snippets
+@│   └── some-noise.reg
 -├── classicthesis-arsclassica.sty
 -├── classicthesis.sty
 !├── baskervaldadfstd-bolditalic.otf
