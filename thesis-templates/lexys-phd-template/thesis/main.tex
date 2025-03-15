@@ -1,0 +1,138 @@
+% **************************************************************************************************************
+% A Classic Thesis Style
+% An Homage to The Elements of Typographic Style
+%
+% Copyright (C) 2018 André Miede and Ivo Pletikosić
+%
+% If you like the style then I would appreciate a postcard. My address
+% can be found in the file ClassicThesis.pdf. A collection of the
+% postcards I received so far is available online at
+% http://postcards.miede.de
+%
+% License:
+% This program is free software; you can redistribute it and/or modify
+% it under the terms of the GNU General Public License as published by
+% the Free Software Foundation; either version 2 of the License, or
+% (at your option) any later version.
+%
+% This program is distributed in the hope that it will be useful,
+% but WITHOUT ANY WARRANTY; without even the implied warranty of
+% MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+% GNU General Public License for more details.
+%
+% You should have received a copy of the GNU General Public License
+% along with this program; see the file COPYING.  If not, write to
+% the Free Software Foundation, Inc., 59 Temple Place - Suite 330,
+% Boston, MA 02111-1307, USA.
+%
+% PLEASE SEE ALSO THE AUTHORS' NOTE REGARDING THIS LICENSE
+% IN THE DOCUMENTATION (ClassicThesis.pdf --> Chapter 1 / Chapter01.tex)
+% **************************************************************************************************************
+\RequirePackage{silence} % :-\
+    \WarningFilter{scrreprt}{Usage of package `titlesec'}
+    %\WarningFilter{scrreprt}{Activating an ugly workaround}
+    \WarningFilter{titlesec}{Non standard sectioning command detected}
+\documentclass[ oneside,openany,titlepage,numbers=noenddot, headinclude,
+                % added by lexy
+                % footinclude,1headlines,
+                cleardoublepage=empty,abstract=on,
+                BCOR=5mm,paper=a4,fontsize=10pt
+                ]{scrreprt}
+
+%********************************************************************
+% Note: Make all your adjustments in here
+%*******************************************************
+\input{classicthesis-config}
+\input{your-custom-commands}
+
+%********************************************************************
+% Bibliographies
+%*******************************************************
+\addbibresource[label=ownpubs]{bibs/publications.bib}
+% \addbibresource{bibs/kuwpica.bib}
+\addbibresource{bibs/thesis.bib}
+
+
+
+%********************************************************************
+% Hyphenation
+%*******************************************************
+%\hyphenation{put special hyphenation here}
+
+
+
+% ********************************************************************
+% GO!GO!GO! MOVE IT!
+%*******************************************************
+\begin{document}
+
+\frenchspacing
+\raggedbottom
+\selectlanguage{british}
+\pagenumbering{roman}
+\pagestyle{plain}
+%********************************************************************
+% Frontmatter
+%*******************************************************
+\include{front_back_matter/Titlepage}
+% \include{front_back_matter/Titleback}
+%%% \cleardoublepage\include{front_back_matter/Dedication}
+%%%\cleardoublepage\include{front_back_matter/Foreword}
+\cleardoublepage\include{front_back_matter/Abstract}
+%%% \cleardoublepage
+\include{front_back_matter/Declaration}
+
+\include{front_back_matter/Acknowledgments} %: Lexy!
+
+\include{front_back_matter/Publications}
+
+\include{front_back_matter/Contents}
+%********************************************************************
+% Mainmatter
+%*******************************************************
+%%% \cleardoublepage
+\pagestyle{scrheadings}
+\pagenumbering{arabic}
+%\setcounter{page}{90}
+
+% use \cleardoublepage here to avoid problems with pdfbookmark
+\cleardoublepage
+\ctparttext{\centering Atafutaye hachoki, akichoka keshapata.}
+\part{Some Kind of Manual}
+\include{chapters/chapter_1}
+% \include{chapters/chapter_2}
+% \include{chapters/chapter_2}
+
+
+
+\ctparttext{\centering Usipojichocha, nani atakuchocha?}
+
+\part{Body of Work}\label{pt:showcase}
+
+
+%\include{multiToC} % <--- just debug stuff, ignore for your documents
+% ********************************************************************
+% Backmatter
+%*******************************************************
+\appendix
+%\renewcommand{\thechapter}{\alph{chapter}}
+%% \cleardoublepage
+
+\ctparttext{\centering You're Finally Approaching The End, Congratulations!}
+\part{Appendix}
+\include{appendices/AppendixA.tex}
+% \include{appendices/AppendixB.tex}
+
+
+
+%********************************************************************
+% Other Stuff in the Back
+%*******************************************************
+\cleardoublepage
+\include{front_back_matter/Bibliography}
+\cleardoublepage\include{front_back_matter/Colophon}
+% ********************************************************************
+% Game Over: Restore, Restart, or Quit?
+%*******************************************************
+\end{document}
+% ********************************************************************
