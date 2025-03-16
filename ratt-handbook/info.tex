@@ -1,0 +1,201 @@
+\section{Introduction}
+
+    This is the \emph{Postgraduate Student Handbook} for the \emph{Centre for Radio Astronomy Techniques and Technologies} (RATT) group at Rhodes University. It provides information for both new and existing postgraduate students on various aspects of the group and its activities. In addition, it contains useful onboarding and academic information for areas such as presenting, events, education, academic adminIstration and useful resources.
+
+    The handbook will be updated on a yearly basis to ensure it provides the latest updates and new information. Therefore, please ensure to download the newest version of this handbook each year.
+
+    \rattbox{Important information text goes here \ldots}
+
+    \begin{minted}[linenos=true]{python}
+        # This specific code block will have line numbers
+        def example():
+            return "This has line numbers for reference"
+    \end{minted}
+
+    \subsection{Git Repository}\label{subsec:git_repository}
+        This handbook lives in the following repository
+
+        \begin{quotation}
+            \ratturl{https://github.com/ratt-ru/baby-ratts}
+        \end{quotation}
+
+        All references to the student repository refers to the above link. Moreover, all files given throughout this handbook are given relative to the repository directory \code{ratt-students/} or the sub-directory \code{resources/} in the same repository, unless otherwise stated. All resources used in the compilation of this handbook are found within the same directory.
+
+        The latest RATT Student Handbook PDF can be downloaded via this link:
+        \rattbox{
+            \begin{quotation}
+                \ratthref{ratt-students/ratt-handbook/ratt-handbook.pdf}{https://github.com/ratt-ru/baby-ratts/blob/main/ratt-handbook-latest.pdf}
+            \end{quotation}
+        }
+
+        If you wish to compile the document yourself, you only need to have \code{lualatex} compiler available on your system in combination with \code{biber} with the following recipe:
+
+        \begin{rattcode}{bash}
+            lualatex ratt-handbook.tex
+            biber ratt-handbook
+            lualatex ratt-handbook.tex
+        \end{rattcode}
+
+        For any issues in this regard, please refer to the contact details given in \cref{sec:contact}.
+
+    \subsection{Research Focus Areas}
+        \begin{itemize}
+            \item Radio Interferometry Techniques
+            \item Signal Processing Algorithms
+            \item Next-gen Telescope Development
+        \end{itemize}
+
+% \newpage
+
+\section{Events}\label{sec:2:events}
+    There are several events that RATT is involved. Some are optional while others are mandatory. Each depends on your field of study, so please investigate whether or not it applies to you if not stated.
+
+    \subsection{SARAO Scholarship Conference}\label{subsec:sarao_scholarship_conference}
+
+    \subsubsection{Overview}\label{subsubsec:overview}
+        The SARAO Scholarship is a \emph{mandatory} conference for all postgraduate students part of SARAO, which includes RATT students. It happens yearly at the end of November/start of December. The conference brings together all students and researchers involved with radio astronomy and interferometry to provide a platform for research professionals to provide key-note talks and reports, and, most importantly, for students to present on their research progress so far. It is a great opportunity to network with fellow peers and industry experts. Moreover, it is an opportunity for students to practice public speaking and presentation skills.
+
+        The location of the conference changes year-to-year, with the details usually provided earlier in the year. It is up to you to ensure that the exact dates and times are noted in your calendar. The exact dates are generally provided earlier in the year. Travel and accommodation costs are covered by SARAO and organisation is handled by RATT administrative team. Note, the conference is usually five days long and scheduled from Monday to Friday. During the conference, there is several informal and fun activities organised for students to take part in. In previous years, we have had speed-meets, gameboard nights, karaoke and team-building competitions.
+
+
+    \subsubsection{Presentations}\label{subsubsec:presentations}
+        At the conference, each student will create and present a short talk on their work to an academically diverse audience. For guidance on presenting, see \cref{sec:presentations}. Specific information about the SARAO conference presentations are given below. Note, any file paths given below are either found in the \code{resources/} directory in the git repository, or are explicit links to follow.
+
+        \begin{itemize}
+            \item The presentation is to be in \emph{PDF} format, unless stated otherwise.
+            \item The slides should be presentable and appropriate for the academic crowd.
+            \item Ensure you include the following logos on the front slide in this order:
+            \begin{table}[H]
+                \centering
+                \begin{tabular}{lll}
+                    {\color{ratt-primary} Order} & Logo & Filename \\
+                    \midrule
+                    First & SARAO-NRF & \code{sarao-logo.png} \\
+                    Second & Rhodes University & \code{rhodes-logo-1.png} \\
+                    Last & RATT & \code{ratt-logo.png} \\
+                    \bottomrule
+                \end{tabular}
+            \end{table}
+            These files can be found in \code{resources/images/logos/}.
+        \end{itemize}
+
+        The presentation file is normally required to be in \emph{PDF} format, unless stated otherwise. The date for the SARAO conference is given out earlier in the year for students to mark down in their calendars.
+
+% \section{Presentations}\label{sec:presentations}
+
+
+% \section{Contacts}\label{sec:contact}
+
+
+
+\section{Meetings}
+    There are three general cateogries of meetings at RATT:
+
+    \textbf{Main Group meetings}: Every Thursday at 12 pm, the entire RATT group (i.e. staff, students, postdocs) meet for a presentation by a scheduled speaker. This is a journal paper presentation usually
+
+    \textbf{Students Journal meetings}: Every Friday at 11 am, students and postdocs meet to. These are \textbf{MANDATORY} for all students.
+
+    \textbf{Project progress meetings}: These are the one-to-one meetings with your supervisors, or the members of your sub-groups. They are generally scheduled by the supervisor, of course, you are expected to attend an present your progress and ask for help.
+
+\subsection{During Meetings}
+    Sometimes it can be difficult to keep track of what was said during meetings. It is easy to misunderstand what one is supposed to do. If English is not one's native language, it can make things 10x more difficult. Therefore, some options could be:
+
+    \begin{enumerate}
+        \item Closed captions (subtitles) for zoom meetings
+        \footnote{\url{https://support.zoom.us/hc/en-us/articles/6643177746829-Viewing-captions-in-another-langua
+        ge}}
+        \item Make minutes of your meeting and write summary notes of that meeting. These could also be used in making a to-do list of your next meeting items.
+        \item ​Tools like github issues/project broads, trello boards, notion boards can be useful in keeping track of what to do. You could also keep ideas for future use here.
+        \item ​ Ask questions: don't be afraid to ask your project buddy, your supervisors, basically anyone who can give you answers that you need.
+        \item Record the meeting. With permission of course, you could record your project meetings and play them back so that nothing is missed. This can be done using your phone, zoom or any other software available to you.
+    \end{enumerate}
+
+
+
+\section{Writing Aids}
+\subsection{Grammarly}
+    If you're starting to write a thesis/paper please request for a premium Grammarly account (for spell
+    check) from Oleg, there is a provision for that. Rhodes actually provides full Grammarly education
+    access to students “for free”. The process is:
+    \begin{enumerate}
+        \item  Go to this link \ratturl{https://login.ru.ac.za/to/grammarly}
+        \item  Log in with your RU/ROSS credentials
+        \item  Go to \ratturl{https://www.grammarly.com/} (if not automatically redirected to Grammarly)
+    \end{enumerate}
+
+    Just be aware of the context of replacement words/suggestions when using these grammar correction tools (especially for the non-english speaking people). This can often lead to unintended consequences. 
+    
+    Another tool that was also suggested is \ratthref{Prowriting aid}{https://prowritingaid.com/}
+
+
+\subsection{Text to Speech Readers}
+    Another hack I recently discovered while writing is using a text to speech (TTS) reader for your thesis/paper. These can come integrated with a PDF reader (e.g I know it is available in adobe PDF viewer Okular), or some chrome/firefox extensions, and definitely microsoft edge. The gist here is to have the TTS read and dictate portions of your text. This way, you could have some help in picking up a bit more easily misplaced punctuations, or even mis-spelled words. A good, free one I’ve found for chrome is \ratthref{Readme-TTS}{https://chrome.google.com/webstore/detail/readme-text-to-speech-tts/npdkkcjlmhcnnaoobfdjndibfkkhhdfn/related}, while my favourite is the Adobe PDF reader one. Please suggest any better ones you may find.
+
+
+\subsection{ChatGPT}
+    \begin{itemize}
+        \item Use it for skeletal stuff only, don’t use it to write it all
+        \item Be very specific in asking it to do things
+        \item Be wary of how you ask it to do something; you may have to iterate a few times with more specific guidelines as you go to get what you want
+        \item Can you ask it to ``read'' something you’ve written and write something in that style? Yes.
+        \item Referencing: it can give you a place to start, and prompts on where to look for stuff, but can also ``hallucinate'' references
+        \item Plagiarism and self-plagiarism.
+    \end{itemize}
+
+
+\section{Previous Theses}
+    It is almost always a good idea to check previous theses in your department for some inspiration on how your thesis structure should be like. Furthermore, older theses relevant to your area of study could provide more insights and understanding to your own work. Fortunately, most universities around the world publish PhD and MSc theses from their students on the open web, making them accessible to those who need access. Rhodes is no exception, as Masters and PhD theses from the Department of Physics are available at the \href{http://vital.seals.ac.za:8080/vital/access/manager/Repository?collection=vital%3A42&sort=ss_dateNormalized+desc%2Csort_ss_title+asc&query=&root=vital%3A291}{\textcolor{ratt-primary}{online e-thesis repository.}}
+
+    Regrettably, not all theses submitted to the library make an appearance to this repository for one reason or another. In case you submitted your thesis to the library and it is not showing up in that repository, please contact the relevant authorities and \textbf{INSIST} on your thesis being made available. You may need it one day.
+
+
+\section{Writing}
+    We most probably all use latex to write our academic material. For beginners, \ratthref{Overleaf}{https://overleaf.com/} is easier to use because it's online and installations don't have to be manually done. However, if one does not like working online because of load shedding and internet problems, there are various other tools that could be used. These include but are not limited to: 
+
+    \begin{itemize}
+        \item vscode + latex workshop extension
+        \item texstudio
+        \item texlive
+        \item lyx
+    \end{itemize}
+
+    Many options are available for the taking. See \ratthref{this wikipedia page}{https://en.wikipedia.org/wiki/Comparison_of_TeX_editors} for some more information. If you need help in setting these up locally on your computer, please reach out. 
+
+
+
+\section{How to Read?}
+    Reading papers, books can be slightly overwhelming sometimes. Some suggestions for helping with
+    this:
+    \begin{enumerate}
+        \item Making notes/bullet points as one reads.
+        \item Annotate, draw, highlight
+        \item Reading papers using the Abstract, Introduction, Conclusion/Summary Method. This can be useful in getting through papers quickly and gathering as much as possible. However, it could be counter-productive if one is new to a field because of jargon and whatnots. In this case reading almost the entire paper might not be a bad idea.
+        \item Read theses to get you acquainted with a subject. Because these usually start from the basic fundamentals, one may get eased into a topic more favourably
+        \item Perhaps consider getting a tablet (with a pen) to keep track of these?
+    \end{enumerate}
+
+\section{Referencing}
+\subsection{Finding References}
+    Did you know that Arxiv is not the only place where one could look for papers? Remember that arxiv may not necessarily contain the final form of a paper, just the preprints. Thus, it is good to find the published text if it is already available. 
+
+    A good place to start is \ratthref{Google scholar}{https://scholar.google.com}. This is google for academic texts and can be time saving. Searching for a paper title, or even just the author and year will list all occurrences where the paper exists. More often than not, you will find the published paper here and links to the paper will be provided already.
+
+    Another option is \ratthref{ADS}{https://ui.adsabs.harvard.edu/} and here one can even maintain an online library of one’s papers. Just search and select.
+
+    Sometimes you will find papers listed but are not available because of some paywall (read Nat... and future MNRA... ahem). In this case, \ratthref{Scihub}{https://www.sci-hub.st/} will help. The links change often because .. of .. legal .. issues, but this will help accessing the inaccessible.
+
+\subsection{Keeping Track of References}
+\subsubsection*{Zotero}
+    I have found Zotero to be the most convenient in keeping track of references online and locally on my computer. Zotero has a web browser add on and luckily, an actively maintained ubuntu/linux app. The good thing is that, when papers are added to Zotero using the web addon, it is automatically synced with the local computer client. So you can have access to all your references in a single place.
+
+    Furthermore, one can categorise papers e.g. if you are working on a specific project, you can add references relating to that paper in that category, instead of having just one very large and general set of references. These can then be easily exported as .bib (latex bibliography files) -- already formatted and all -- for use in your thesis or paper.
+
+
+    There are also extensions for Zotero to make it even better. One very convenient one is Better BibTeX for Zotero. For example, Vanilla Zotero does not have the option of customising and managing one’s citation keys (i.e. the key that you use while citing in latex e.g. \mintinline{latex}{\citep{ratt2020}}) because it automatically generates them. And they are not the cutest. But Better BibTeX allows this. Another advantage is that one can pick and choose which fields should go into your bib file, something that Zotero on its own does not offer. Download, installation, and setup instructions are found at \ratturl{https://www.zotero.org/download/} . There’s even an android app! 
+
+
+\subsubsection*{Mendeley}
+    \ratthref{Mendeley}{https://www.mendeley.com/library/} is another option. However, they now have a purely online ref manager (i.e there is no local client). This mostly works but I find it slightly laggy (but this could just be my computer, please test for yourself and see). Here references can also be added on the browser add on and entire libraries exported as .bib files. 
+
+\subsubsection*{Stone Age}
+    If you just like the extreme sport of manually adding references to the bib file, google scholar could also assist with this. Just search for the paper, below its listing you will see a cite link. Click on that and click on BibTex at the bottom of the popup window. You can then copy this into your bib file.
