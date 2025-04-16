@@ -1,0 +1,93 @@
+%*******************************************************
+% Titlepage
+%*******************************************************
+\begin{titlepage}
+
+  % % Uncomment for frontpage image
+  % \AddToShipoutPictureBG*{%
+  %   \AtPageLowerLeft{
+  %   \includegraphics[width=\paperwidth,height=\paperheight]{figures/title/title-page.png}
+  %   }
+  % }
+
+    %\pdfbookmark[1]{\myTitle}{titlepage}
+    % if you want the titlepage to be centered, uncomment and fine-tune the line below (KOMA classes environment)
+    \begin{addmargin}[0cm]{0cm}
+    \begin{center}
+        \large
+
+        \hfill
+
+        \vfill
+
+        \begingroup
+            \color{CMtitle}\Huge\spacedallcaps{\myTitle} \\ \bigskip
+        \endgroup
+
+        \vspace{8mm}
+
+        {\myName}
+
+        \vspace{5mm}
+
+        Supervisors: \\
+
+        \vspace{3mm}
+        
+        \color{CMtitle}{\myProf} \\
+        {\myOtherProf} \\
+        % {\mySupervisor}
+
+        \vspace{8mm}
+
+        \begin{figure}[!htb]
+          \centering
+          \begin{minipage}{0.5\textwidth}
+            \centering
+            \includegraphics[width=4.5cm]{figures/title/rhodes-logo.png}
+          \end{minipage}
+          \vspace{1cm}\\
+          \begin{minipage}{0.5\textwidth}
+              \centering
+              \includegraphics[width=4.5cm]{figures/title/ratt-logo.png}
+            \end{minipage}
+         \end{figure}
+
+        
+
+        \vspace{10mm}
+        % \mySubtitle \\ \medskip
+        \small
+        A thesis submitted in fulfilment of the requirements for the degree of
+
+        \bigskip
+        
+        \begingroup
+            \color{CMtitle}\myDegree \\
+        \endgroup
+        
+        \bigskip
+
+        At the \\
+        \medskip
+        \myFaculty \\
+      
+        \myDepartment \\
+    
+        \myUni \\ 
+        
+        \vspace{10mm}
+
+        \begingroup
+            \footnotesize The financial assistance of the National Research Foundation (NRF) towards this research is hereby acknowledged. Opinions expressed and conclusions arrived at, are those of the author and are not necessarily to be attributed to the NRF.
+        \endgroup
+        
+        \bigskip
+
+        \myTime%\ -- \myVersion
+
+        \vfill
+
+    \end{center}
+  \end{addmargin}
+\end{titlepage}

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   height="1659.4041"
+   id="svg2"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="ratt-logo-transparent-text-url.svg"
+   sodipodi:version="0.32"
+   viewBox="0 0 3325.2333 1555.6913"
+   width="3546.9155"
+   version="1.1"
+   inkscape:export-filename="/home/oms/projects/logo-designs/ratt/ratt-logo-transparent-with-text-url-5000pix.png"
+   inkscape:export-xdpi="135.32884"
+   inkscape:export-ydpi="135.32884">
+  <metadata
+     id="metadata3">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:title></dc:title>
+        <dc:description />
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>shape</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://www.openclipart.org/">
+            <dc:title>Open Clip Art Library</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>yves GUILLOU</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title />
+          </cc:Agent>
+        </dc:rights>
+        <dc:date />
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://web.resource.org/cc/PublicDomain" />
+        <dc:language>en</dc:language>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://web.resource.org/cc/PublicDomain">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6">
+    <linearGradient
+       id="linearGradient5260"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#ffffff;stop-opacity:1;"
+         offset="0"
+         id="stop5262" />
+    </linearGradient>
+    <linearGradient
+       id="linearGradient3793"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#782670;stop-opacity:1;"
+         offset="0"
+         id="stop3795" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     bordercolor="#666666"
+     borderopacity="1.0"
+     id="base"
+     inkscape:current-layer="svg2"
+     inkscape:cx="1773.4578"
+     inkscape:cy="975.59058"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:window-height="1337"
+     inkscape:window-width="2548"
+     inkscape:window-x="-6"
+     inkscape:window-y="71"
+     inkscape:zoom="0.54836378"
+     pagecolor="#ffffff"
+     showgrid="false"
+     inkscape:window-maximized="0"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <g
+     aria-label="RATT"
+     transform="matrix(101.5244,0,0,102.98803,46271.804,-2539.4174)"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.00009346px;line-height:0.01%;font-family:'TeX Gyre Pagella';-inkscape-font-specification:'TeX Gyre Pagella, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#782670;fill-opacity:1;stroke:none"
+     id="flowRoot3018">
+    <path
+       d="m -447.74222,38.369769 v -0.480004 c -0.432,-0.084 -0.576,-0.144001 -0.84,-0.540004 l -2.17202,-3.288026 c 0.67201,-0.276002 0.94801,-0.468003 1.27201,-0.816006 0.336,-0.384003 0.51601,-0.816006 0.51601,-1.32001 0,-1.164009 -0.76801,-1.764014 -2.28002,-1.764014 -0.79201,0 -1.59601,0.036 -2.38802,0.036 -0.70801,0 -1.42801,-0.012 -2.13602,-0.036 v 0.444003 l 0.44401,0.036 c 0.54,0.048 0.576,0.120001 0.576,1.176009 v 4.896038 c 0,1.068008 -0.012,1.092008 -0.576,1.140009 l -0.44401,0.036 v 0.480004 c 0.62401,-0.024 1.23601,-0.036 1.86002,-0.036 0.624,0 1.24801,0.012 1.87201,0.036 v -0.480004 l -0.444,-0.036 c -0.56401,-0.048 -0.57601,-0.072 -0.57601,-1.140009 V 30.86971 c 0.168,-0.072 0.39601,-0.108 0.70801,-0.108 1.06801,0 1.68001,0.564004 1.68001,1.536012 0,0.636004 -0.3,1.176009 -0.792,1.464011 -0.30001,0.180001 -0.60001,0.228002 -1.04401,0.228002 v 0.276002 l 2.52002,4.104032 c 0.36,-0.024 0.72,-0.036 1.08001,-0.036 0.384,0 0.78,0.012 1.164,0.036 z"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.00009346px;line-height:1.25;font-family:'TeX Gyre Pagella';-inkscape-font-specification:'TeX Gyre Pagella, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#782670"
+       id="path32"
+       inkscape:connector-curvature="0" />
+    <path
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.00009346px;line-height:1.25;font-family:'TeX Gyre Pagella';-inkscape-font-specification:'TeX Gyre Pagella, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#782670;stroke-width:109.07050323"
+       d="m 1540.875,853.88867 a 378.63245,547.15333 39.473181 0 1 -83.9082,78.76563 l -14.2266,11.07422 a 378.63245,547.15333 39.473181 0 1 -47.541,32.90429 l 72.8145,180.40039 h -265.1035 l 43.2656,-111.4766 a 378.63245,547.15333 39.473181 0 1 -87.8731,17.4063 l -126.9297,311.584 c -20.7922,51.412 -44.18217,76.4592 -72.77144,79.0957 l -38.98633,3.9551 v 48.7753 c 49.38256,-2.6364 97.46427,-3.955 146.84567,-3.955 49.3826,0 97.4643,1.3186 146.8457,3.955 v -48.7753 l -64.9746,-3.9551 c -40.2849,-2.6365 -41.5855,-46.139 -31.1894,-75.1406 l 54.5801,-147.6446 h 326.1796 l 58.4786,150.2813 c 7.797,21.092 16.8934,69.8674 -18.1934,72.5039 l -68.875,3.9551 v 48.7753 c 66.2762,-2.6364 131.2531,-3.955 197.5293,-3.955 68.8742,0 136.4481,1.3186 205.3223,3.955 v -48.7753 l -31.1875,-3.9551 c -36.3864,-5.273 -54.5799,-19.7744 -71.4746,-58.0039 z"
+       transform="matrix(0.00923423,0,0,0.009103,-455.77028,24.657263)"
+       id="path34"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m -431.09434,30.221705 -0.072,-0.06 c -1.23601,0.024 -2.48401,0.036 -3.72002,0.036 -1.24801,0 -2.48402,-0.012 -3.73203,-0.036 l -0.072,0.06 c 0.096,0.576005 0.12,0.996008 0.156,1.908015 h 0.48 l 0.06,-0.828006 c 0.036,-0.480004 0.48,-0.396003 0.85201,-0.396003 h 1.40401 v 5.808045 c 0,1.068008 -0.012,1.092008 -0.57601,1.140009 l -0.444,0.036 v 0.480004 c 0.62401,-0.024 1.23601,-0.036 1.86002,-0.036 0.624,0 1.24801,0.012 1.87201,0.036 v -0.480004 l -0.444,-0.036 c -0.56401,-0.048 -0.57601,-0.072 -0.57601,-1.140009 v -5.808045 h 1.40401 c 0.58801,0 0.67201,-0.084 0.85201,0.396003 l 0.06,0.828006 h 0.48 c 0.024,-0.912007 0.06,-1.33201 0.156,-1.908015 z"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.00009346px;line-height:1.25;font-family:'TeX Gyre Pagella';-inkscape-font-specification:'TeX Gyre Pagella, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#782670"
+       id="path36"
+       inkscape:connector-curvature="0" />
+    <path
+       d="m -423.07865,30.221705 -0.072,-0.06 c -1.23601,0.024 -2.48402,0.036 -3.72003,0.036 -1.24801,0 -2.48402,-0.012 -3.73203,-0.036 l -0.072,0.06 c 0.096,0.576005 0.12,0.996008 0.156,1.908015 h 0.48001 l 0.06,-0.828006 c 0.036,-0.480004 0.48,-0.396003 0.85201,-0.396003 h 1.40401 v 5.808045 c 0,1.068008 -0.012,1.092008 -0.57601,1.140009 l -0.444,0.036 v 0.480004 c 0.624,-0.024 1.23601,-0.036 1.86001,-0.036 0.62401,0 1.24801,0.012 1.87202,0.036 v -0.480004 l -0.44401,-0.036 c -0.564,-0.048 -0.576,-0.072 -0.576,-1.140009 v -5.808045 h 1.40401 c 0.58801,0 0.67201,-0.084 0.85201,0.396003 l 0.06,0.828006 h 0.48 c 0.024,-0.912007 0.06,-1.33201 0.156,-1.908015 z"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:12.00009346px;line-height:1.25;font-family:'TeX Gyre Pagella';-inkscape-font-specification:'TeX Gyre Pagella, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#782670"
+       id="path38"
+       inkscape:connector-curvature="0" />
+  </g>
+  <path
+     style="fill:#782670;fill-opacity:1;stroke:#782670;stroke-width:1;stroke-opacity:1"
+     d="m 1428.8472,0.50003069 c -34.9474,0.16 -68.663,11.00445431 -100.8233,23.74145431 -39.049,12.2007 -77.8196,25.391879 -115.3089,41.856078 -19.032,7.508001 -37.8606,15.416341 -56.5631,23.699341 -14.1017,6.139501 -29.3886,8.167867 -44.1065,12.055656 -15.8281,1.9869 -31.6189,4.83409 -47.5762,2.61109 -21.5573,-0.85939 -43.0573,-4.650101 -64.62891,-3.8269 -25.67475,1.7351 -51.31697,4.47081 -76.34583,10.6549 -17.2179,3.51071 -34.39532,7.0111 -51.29517,11.8213 -12.24945,2.06589 -24.85764,3.19986 -37.24548,2.00866 -12.38527,-1.4979 -25.78436,-11.60489 -23.77258,-25.323483 0.29623,-14.120606 -7.77168,-29.30336 -22.50366,-32.14966 -12.43289,-2.6478 -25.36317,-0.531457 -37.82593,0.179443 -17.88088,4.6091 -39.22572,10.48889 -46.8805,29.362795 -7.4917,15.660005 -2.38778,34.004905 8.04383,47.005005 9.57898,14.4286 16.75601,33.76788 9.61121,50.74218 -5.25387,11.3375 -17.54978,16.66804 -25.53772,25.79224 -10.75162,10.8215 -22.87626,20.06926 -35.63232,28.35204 -17.91,14.55981 -25.46792,37.52484 -29.74549,59.38843 -4.46284,7.71521 -7.70445,23.40996 6.62476,20.07386 15.08684,4.9474 -4.11935,30.67624 -10.60364,12.60315 -6.96732,5.823 -5.01523,21.72993 -9.20105,31.09314 -4.25442,20.50449 -10.44142,40.57544 -16.52526,60.53283 -3.54008,17.174 -16.07733,32.7753 -33.21351,37.7472 -19.26554,9.49039 -19.9077,40.07759 -2.01233,51.4508 11.37005,8.65509 26.68794,7.51352 37.55127,16.74683 13.94085,1.78239 24.25119,8.57779 38.25074,10.979 14.13183,0.50859 28.36351,-4.69656 40.437,-11.71875 7.96202,-10.4191 19.81293,-18.3395 33.49548,-17.4884 11.029,-7.7205 27.32165,-9.03394 34.31763,-20.46204 13.38432,-1.2459 23.42637,-10.16685 34.96948,-15.87525 14.87458,-2.4261 24.60482,-15.97558 38.90625,-20.07568 13.33567,-4.0304 21.23757,-15.84852 31.94275,-22.99072 7.01568,-9.2369 17.50123,-12.02405 23.13904,-22.19605 7.55553,-8.95609 14.02265,-19.29123 16.9281,-30.74523 -2.28577,-9.29861 10.84107,-15.96342 7.75451,-22.80213 -6.23952,-3.3797 -4.11178,-17.51113 -10.9259,-23.81103 -5.6435,-9.1896 -14.4857,-15.74461 -19.55383,-25.27771 -11.94495,-16.2124 -36.46944,-20.67796 -42.25158,-41.74256 -4.25571,-11.07188 8.91579,-28.49632 20.73852,-25.18432 11.47845,-2.6312 21.89173,10.34941 22.60437,22.22351 2.10771,13.3292 3.12224,27.69862 12.16186,38.44482 4.43801,11.77551 9.61454,23.70522 20.28077,31.22132 13.60517,10.9449 29.11816,19.02933 44.48911,27.11242 11.63625,10.52381 27.54413,12.28137 42.19847,14.96888 12.02474,3.24789 25.02964,-1.22928 36.59554,4.48242 13.9909,0.83739 28.0111,-1.83828 41.9512,0.67383 5.5336,1.19772 10.2179,-0.1465 14.6559,-1.06568 a 45.32019,79.976799 39.09816 0 1 55.5029,-45.64086 45.32019,79.976799 39.09816 0 1 40.9771,7.34802 l 0.368,-0.63172 3.7061,-1.67176 3.3124,-0.37902 0.2765,-0.0257 1.4666,0.35523 1.5674,-0.70679 3.3124,-0.37719 0.2765,-0.0275 1.4667,0.35523 1.571,-0.70679 3.3088,-0.3772 0.2782,-0.0256 1.4649,0.35705 1.571,-0.71045 3.3124,-0.37537 0.2747,-0.0256 1.4648,0.35522 1.5711,-0.70862 3.3124,-0.37719 0.2746,-0.0256 1.4667,0.35522 1.571,-0.70678 3.3105,-0.37903 0.2766,-0.0256 1.4666,0.35521 1.5692,-0.70678 3.3124,-0.37903 0.2747,-0.0256 1.4667,0.35522 1.5692,-0.70678 3.3124,-0.37904 0.2764,-0.0256 1.4667,0.35706 1.5692,-0.70862 3.3105,-0.37538 0.2766,-0.0275 1.4685,0.35522 1.5674,-0.70678 3.3124,-0.3772 0.2764,-0.0256 1.4649,0.35523 1.571,-0.70862 3.3105,-0.3772 0.2784,-0.0256 1.463,0.35523 1.571,-0.70862 3.3124,-0.37721 0.2765,-0.0256 1.4667,0.35523 1.5674,-0.70679 3.3124,-0.37903 0.2764,-0.0256 1.4667,0.35706 1.5692,-0.70862 3.3105,-0.37719 0.2784,-0.0257 1.4667,0.35523 1.5692,-0.70679 3.3124,-0.37904 0.2746,-0.0256 1.4667,0.35523 1.5692,-0.70679 3.3123,-0.3772 0.2747,-0.0275 1.4667,0.35522 1.571,-0.70679 3.3106,-0.37719 0.2765,-0.0257 1.463,0.35523 1.5729,-0.70862 3.3124,-0.37719 0.2746,-0.0238 1.4649,0.35521 1.571,-0.71044 3.3123,-0.37537 0.2747,-0.0257 1.4667,0.35523 1.5711,-0.70679 3.3105,-0.37902 0.2783,-0.0257 1.4667,0.35523 1.5674,-0.70679 3.3123,-0.37902 0.2765,-0.0256 1.4667,0.35523 1.5674,-0.70679 3.3124,-0.37902 0.2765,-0.0257 1.4666,0.35523 1.5693,-0.70679 3.3105,-0.37719 0.2783,-0.0257 1.4667,0.35523 1.5674,-0.70679 3.3123,-0.3772 0.2765,-0.0256 1.4649,0.35522 1.5692,-0.70862 3.3142,-0.3772 0.2747,-0.0256 1.4648,0.35522 1.5729,-0.70862 3.3106,-0.37719 0.2764,-0.0256 1.4667,0.35522 1.5692,-0.70678 3.3124,-0.37903 0.2747,-0.0256 1.4666,0.35705 1.5692,-0.70862 3.3124,-0.37903 0.2747,-0.0238 1.4667,0.35522 1.571,-0.70678 3.3106,-0.37903 0.2764,-0.0256 1.4667,0.35522 1.5692,-0.70678 3.3124,-0.3772 0.2747,-0.0275 1.4666,0.35522 1.5692,-0.70678 3.3125,-0.37721 0.2746,-0.0256 1.4648,0.35523 1.5729,-0.70862 3.3105,-0.37721 0.2784,-0.0256 3.9532,0.95948 2.6569,3.07617 0.3772,4.05029 -2.0453,3.51562 -3.7079,1.67175 -3.3124,0.37721 -0.2764,0.0256 -1.4667,-0.35523 -1.5675,0.70679 -3.3123,0.37903 -0.2765,0.0256 -1.4666,-0.35523 -1.5693,0.70679 -3.3124,0.37903 -0.2764,0.0256 -1.4668,-0.35523 -1.5692,0.70679 -3.3123,0.37903 -0.2747,0.0256 -1.4666,-0.35523 -1.5692,0.7068 -3.3124,0.3772 -0.2747,0.0256 -1.4667,-0.35523 -1.571,0.70679 -3.3106,0.3772 -0.2764,0.0257 -1.4649,-0.35523 -1.571,0.70862 -3.3124,0.37719 -0.2747,0.0256 -1.4649,-0.35522 -1.5709,0.70861 -3.3125,0.3772 -0.2746,0.0257 -1.4667,-0.35523 -1.5711,0.70679 -3.3105,0.37902 -0.2783,0.0257 -1.4666,-0.35706 -1.5674,0.70862 -3.3124,0.37902 -0.2765,0.0238 -1.4667,-0.35522 -1.5674,0.70679 -3.3124,0.37902 -0.2765,0.0257 -1.4666,-0.35523 -1.5693,0.70679 -3.3105,0.37719 -0.2783,0.0275 -1.4666,-0.35523 -1.5674,0.70679 -3.3124,0.3772 -0.2765,0.0256 -1.4648,-0.35522 -1.5693,0.70862 -3.3142,0.3772 -0.2746,0.0256 -1.4649,-0.35705 -1.5728,0.71045 -3.3106,0.37536 -0.2765,0.0256 -1.4667,-0.35522 -1.5692,0.70678 -3.3124,0.37903 -0.2747,0.0256 -1.4666,-0.35522 -1.5692,0.70678 -3.3124,0.37903 -0.2746,0.0256 -1.4668,-0.35522 -1.5709,0.70679 -3.3106,0.37903 -0.2765,0.0256 -1.4667,-0.35522 -1.5692,0.70678 -3.3124,0.37721 -0.2747,0.0275 -1.4666,-0.35705 -1.5693,0.70862 -3.3123,0.37536 -0.2746,0.0256 -1.4649,-0.35523 -1.5729,0.70862 -3.3105,0.3772 -0.2784,0.0256 -1.4648,-0.35522 -1.5692,0.70861 -3.3124,0.37721 -0.2764,0.0256 -1.4667,-0.35523 -1.5675,0.70679 -3.3123,0.37904 -0.2765,0.0256 -1.4666,-0.35523 -1.5693,0.70679 -3.3105,0.37903 -0.2783,0.0256 -1.4667,-0.35706 -1.5674,0.70862 -3.3124,0.3772 -0.2764,0.0256 -1.4667,-0.35523 -1.5692,0.70679 -3.3124,0.37719 -0.2747,0.0275 -1.4667,-0.35523 -1.571,0.70679 -3.3106,0.3772 -0.2764,0.0257 -1.4649,-0.35522 -1.571,0.70862 -3.3124,0.37719 -0.2747,0.0257 -1.4649,-0.35523 -1.5709,0.70679 -3.3124,0.37902 -0.2766,0.0238 -1.4666,-0.35522 -1.5692,0.70679 -3.3123,0.37902 -0.2747,0.0257 -1.4668,-0.35523 -1.5691,0.70679 -3.3124,0.37902 -0.2747,0.0256 -1.4685,-0.35522 -1.5692,0.70679 -3.3106,0.37719 -0.2252,0.0219 a 45.32019,79.976799 39.09816 0 1 0.2033,25.5249 45.32019,79.976799 39.09816 0 1 -3.9734,13.78418 c 1.7546,0.67592 3.5067,1.35858 5.2478,2.06176 10.0716,8.49171 24.1073,11.13546 32.884,21.22376 10.6744,6.3315 21.321,13.11543 32.4755,18.35083 8.3217,0.28119 17.8513,10.12281 23.0621,8.90991 6.5607,-0.051 15.7628,5.99858 24.6625,4.37989 10.7366,3.83979 23.497,4.51908 34.0302,12.70568 12.174,2.6074 24.3808,5.71702 36.7785,7.38281 8.6534,1.6487 19.0005,-1.80304 27.356,3.09266 -8.8397,3.35689 -19.7596,3.11703 -27.9328,9.20654 -16.0629,9.65599 -19.2457,31.56553 -14.9506,48.37463 4.8385,18.158 22.8589,27.42756 38.0475,35.84656 14.2346,4.7647 30.1863,2.29827 37.6996,-11.41663 9.2769,-9.6181 -1.2207,-23.31516 5.592,-33.37646 6.9297,-8.1869 18.9406,-7.27469 28.0409,-11.98608 12.366,0.80299 23.1618,-3.50658 32.8455,-11.51367 13.9134,-3.1995 21.8489,-16.99924 35.3374,-21.42884 12.1023,-7.3478 19.9028,-20.72455 28.3429,-31.94275 5.1354,-11.6041 13.8316,-21.19845 17.0069,-33.92395 5.3073,-10.6273 11.8891,-31.15751 -5.3998,-34.59411 -8.5772,5.45509 -17.5028,-1.1176 -8.1427,-8.52539 8.1683,-9.8271 23.8015,-17.22248 35.7751,-10.46448 9.8168,9.97819 18.2954,24.07174 15.8624,38.64075 -10.5528,70.91519 -31.23,140.32012 -61.0437,205.53221 -9.3891,23.2686 -22.6997,44.76618 -35.2312,66.44898 -38.5928,64.2626 -88.2594,123.15829 -151.3513,164.52758 -62.1222,42.0801 -129.9242,76.45621 -201.8628,98.19031 -60.9116,18.33199 -125.1733,24.90864 -188.60421,21.46361 -31.52643,-2.35519 -63.37981,-6.03122 -93.37645,-16.42819 -9.33346,-2.60081 -19.75785,-3.66444 -28.79149,0.57863 0.76555,16.6109 20.33754,20.33372 27.56286,32.02331 8.13065,5.28656 18.95822,5.32425 25.36926,13.51134 9.1362,2.76141 21.28767,6.97557 31.09495,10.25203 12.56447,5.04447 26.00409,6.32127 39.19744,9.89497 11.88909,1.6749 23.93454,3.8248 36.00944,4.2975 14.3488,4.0189 29.5643,-0.7634 44.2402,1.7578 12.4754,1.0305 24.8884,-1.4666 37.2894,-0.7123 12.5656,-3.9863 25.4077,-1.8873 38.1171,-4.1528 12.3366,-0.7293 21.8783,-7.173 34.1492,-4.1876 11.3201,-6.80391 26.4522,-3.40753 39.8015,-8.28919 9.9849,-2.81259 20.7401,-5.95312 29.6759,-7.37362 6.407,-5.2065 16.4729,-3.27713 24.2872,-8.92088 11.8125,-2.59041 23.9327,-3.67969 34.9566,-9.33469 13.2308,-3.05184 25.0638,-6.25847 36.9287,-12.96937 12.0039,-4.17216 24.6679,-5.96231 35.8997,-11.90006 8.4619,-0.47325 15.8598,-16.71958 20.603,-8.44299 10.5849,-6.72379 21.6479,-10.31716 32.5562,-16.84936 12.2439,-5.3669 20.7254,-16.20231 33.5119,-20.59021 8.7363,-8.3517 18.9476,-15.14868 28.6707,-22.91748 6.2039,-9.2174 19.7384,-12.8062 26.3012,-22.771 5.8824,-10.2826 17.5318,-18.50062 27.4513,-27.63061 9.6902,-7.8816 14.9431,-19.44525 23.3257,-28.26965 8.9045,-6.2613 13.9151,-20.25254 21.5003,-29.83154 5.8515,4.6836 3.8077,-8.74853 8.6627,-11.07422 7.4758,-11.49441 17.5484,-21.0886 22.2784,-34.2572 8.8815,-11.5169 14.9656,-24.74277 23.4851,-36.45997 6.886,-9.20449 6.7611,-21.94291 15.337,-30.25451 9.7128,-6.5714 5.767,-19.99946 13.9618,-29.33167 4.2119,-11.7624 9.1212,-23.65716 14.1375,-35.51696 6.6699,-6.3122 5.9766,-21.2363 9.4043,-25.2008 6.0583,-2.07891 -0.6651,-15.07078 6.5552,-18.63648 3.3749,-12.4883 8.6822,-24.40566 10.0361,-37.37365 3.0775,-13.11071 6.4626,-26.29521 6.8389,-39.82911 7.1602,-13.1446 3.7092,-28.68871 7.9486,-42.583 2.1608,-14.4396 1.2965,-28.95085 1.8622,-43.43445 1.3559,-15.8431 0.7363,-31.76949 -0.1886,-47.6294 -2.5003,-20.3767 -4.9392,-41.17269 -14.2438,-59.81689 -4.356,-13.2641 -7.0959,-27.09157 -13.9013,-39.45557 -7.4537,-18.58549 -20.0997,-34.19376 -31.2397,-50.57556 -5.7782,-14.56729 -8.8859,-30.44313 -15.1666,-45.13183 -8.1789,-19.3632 -18.7461,-38.04407 -32.5012,-53.995972 C 1594.5886,58.739979 1564.3184,33.94342 1528.7716,19.13642 1499.0997,5.7860052 1466.472,1.2067703 1434.1775,0.65567034 l -2.6661,-0.0842285 z M 936.04451,376.35878 c -0.6371,-0.01 -1.27728,0.006 -1.91712,0.0476 -22.15455,2.45521 -33.11235,28.8932 -27.30469,48.56689 3.88255,16.98321 14.93202,32.39593 30.24536,40.86182 12.43738,-2.6647 9.25804,-22.77358 24.73935,-16.51428 9.90628,3.8299 20.80163,4.94072 26.68219,10.61462 12.1852,-2.5515 23.6637,5.54088 36.4069,-1.10412 13.1599,-4.5006 26.0707,-9.95126 40.0121,-11.70776 0.761,-0.24676 1.5247,-0.45644 2.2907,-0.63721 a 45.32019,79.976799 39.09816 0 1 1.3092,-19.4513 45.32019,79.976799 39.09816 0 1 10.8691,-28.18359 c -4.6775,0.81007 -9.3833,1.44284 -14.1668,1.56739 -19.6221,1.49089 -39.0314,-3.35851 -58.5279,-4.94752 -19.84264,-2.6586 -40.04839,-6.12868 -57.71296,-16.03088 -4.08984,-1.73014 -8.46581,-3.01144 -12.92543,-3.08167 z m 244.05579,33.15674 a 45.32019,79.976799 39.09816 0 1 -24.0619,34.40552 c 8.8287,0.73121 18.4242,5.08039 25.8142,8.05298 10.9928,4.1664 21.754,9.51198 32.1185,14.47998 16.4163,6.1936 26.0941,-18.72023 13.1947,-28.26233 -12.1035,-9.7752 -27.0356,-15.30353 -39.6058,-24.55993 -2.4402,-1.4752 -4.9304,-2.84138 -7.4597,-4.11622 z m 258.2812,61.66077 c 2.1323,0.089 -2.8343,3.07549 -2.3163,3.82324 -8.1031,6.4824 -23.2401,5.67596 -30.8111,1.63148 9.7905,-5.44981 21.9415,-2.30894 32.6019,-5.43275 0.209,-0.0214 0.3834,-0.0279 0.5255,-0.0219 z"
+     id="selection_to_path"
+     inkscape:connector-curvature="0" />
+  <path
+     style="fill:none;stroke:#782670;stroke-width:13.33333397;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.33333344, 3.33333344;stroke-dashoffset:4;stroke-opacity:1"
+     d="m 1075.6235,470.38339 -12.7832,267.6665"
+     id="path5243"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc"
+     inkscape:export-filename="/home/oms/Documents/ratt/ratt-logo-80pix.png"
+     inkscape:export-xdpi="23.467333"
+     inkscape:export-ydpi="23.467333" />
+  <path
+     style="fill:none;stroke:#782670;stroke-width:13.33333397;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:2.20000029;stroke-dasharray:1.33333338, 1.33333338;stroke-dashoffset:4;stroke-opacity:1"
+     d="m 1160.6747,438.53774 189.6311,178.06427"
+     id="path5245"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc"
+     inkscape:export-filename="/home/oms/Documents/ratt/ratt-logo-80pix.png"
+     inkscape:export-xdpi="23.467333"
+     inkscape:export-ydpi="23.467333" />
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot5280"
+     style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:'Bitstream Vera Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+     transform="matrix(4.4444445,0,0,4.4444445,552.31827,-0.01285581)"><flowRegion
+       id="flowRegion5282"><rect
+         id="rect5284"
+         width="123.53886"
+         height="128.43149"
+         x="-42.810497"
+         y="174.70853" /></flowRegion><flowPara
+       style="font-size:72px;line-height:1.25"
+       id="flowPara5288"> </flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot2996"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+     transform="translate(552.31828,-0.01285581)"><flowRegion
+       id="flowRegion2998"><rect
+         id="rect3000"
+         width="243.40825"
+         height="141.88622"
+         x="-417.09656"
+         y="64.62439"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:640px;line-height:125%;font-family:Arial;-inkscape-font-specification:Arial;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
+       id="flowPara3008"
+       style="font-size:640px;line-height:1.25">RATTR</flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot3010"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:'Arial Black';-inkscape-font-specification:'Arial Black,';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+     transform="matrix(4.4444445,0,0,4.4444445,552.31827,-0.01285581)"><flowRegion
+       id="flowRegion3012"><rect
+         id="rect3014"
+         width="384.07132"
+         height="178.58093"
+         x="-432.99759"
+         y="-32.005016"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:144px;line-height:125%;font-family:'Arial Black';-inkscape-font-specification:'Arial Black,';text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
+       id="flowPara3016"
+       style="font-size:144px;line-height:1.25">RATTRA</flowPara></flowRoot>  <path
+     sodipodi:type="arc"
+     style="fill:none;fill-opacity:0;stroke:#782670;stroke-width:22.78364182;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="path2983-6"
+     sodipodi:cx="1360.1198"
+     sodipodi:cy="566.02313"
+     sodipodi:rx="399.52374"
+     sodipodi:ry="479.069"
+     d="m 1624.4008,925.30274 a 399.52374,479.069 0 0 1 -561.6618,-39.35587 399.52374,479.069 0 0 1 28.0745,-673.79721 399.52374,479.069 0 0 1 562.1362,27.9699 399.52374,479.069 0 0 1 -18.5754,674.26986"
+     transform="matrix(1,0,-0.30819049,0.95132467,0,0)"
+     sodipodi:start="0.84799221"
+     sodipodi:end="0.81419539"
+     sodipodi:open="true"
+     inkscape:export-filename="/home/oms/Documents/ratt/ratt-logo-80pix.png"
+     inkscape:export-xdpi="23.467333"
+     inkscape:export-ydpi="23.467333" />
+  <path
+     sodipodi:type="arc"
+     style="fill:none;fill-opacity:1;stroke:#78266f;stroke-width:13.33333397;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+     id="path3791-3"
+     sodipodi:cx="1128.0864"
+     sodipodi:cy="-400.83603"
+     sodipodi:rx="45.32019"
+     sodipodi:ry="79.976799"
+     d="m 1158.0653,-340.85713 a 45.32019,79.976799 0 0 1 -63.7124,-6.57015 45.32019,79.976799 0 0 1 3.1846,-112.48514 45.32019,79.976799 0 0 1 63.7662,4.66936 45.32019,79.976799 0 0 1 -2.1071,112.56404"
+     transform="rotate(39.09816)"
+     sodipodi:start="0.84799221"
+     sodipodi:end="0.81419539"
+     sodipodi:open="true"
+     inkscape:transform-center-x="-3.5989559"
+     inkscape:transform-center-y="-3.5989559"
+     inkscape:export-filename="/home/oms/Documents/ratt/ratt-logo-80pix.png"
+     inkscape:export-xdpi="23.467333"
+     inkscape:export-ydpi="23.467333" />
+  <flowRoot
+     xml:space="preserve"
+     id="flowRoot840"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#782670;fill-opacity:1;stroke:none"
+     transform="matrix(0.96498345,0,0,0.95524208,-36.936107,-36.716376)"><flowRegion
+       id="flowRegion842"
+       style="fill:#782670;fill-opacity:1"><rect
+         id="rect844"
+         width="3502.9114"
+         height="504.26981"
+         x="35.278137"
+         y="1558.252"
+         style="fill:#782670;fill-opacity:1" /></flowRegion><flowPara
+       id="flowPara846"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96px;font-family:'TeX Gyre Pagella';-inkscape-font-specification:'TeX Gyre Pagella, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#782670;fill-opacity:1">Centre For Radio Astronomy Techniques &amp; Technologies  <flowSpan
+   style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:74.66666412px;font-family:'TeX Gyre Pagella';-inkscape-font-specification:'TeX Gyre Pagella, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#782670;fill-opacity:1"
+   id="flowSpan848">•</flowSpan>  Rhodes University </flowPara></flowRoot>  <flowRoot
+     xml:space="preserve"
+     id="flowRoot840-3"
+     style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#782670;fill-opacity:1;stroke:none"
+     transform="matrix(2.0604696,0,0,2.0396694,1708.7228,-2842.0896)"><flowRegion
+       id="flowRegion842-6"
+       style="fill:#782670;fill-opacity:1"><rect
+         id="rect844-7"
+         width="3502.9114"
+         height="504.26981"
+         x="35.278137"
+         y="1558.252"
+         style="fill:#782670;fill-opacity:1" /></flowRegion><flowPara
+       id="flowPara846-5"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:96px;font-family:'TeX Gyre Pagella';-inkscape-font-specification:'TeX Gyre Pagella, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#782670;fill-opacity:1">https://ratt.center</flowPara></flowRoot></svg>

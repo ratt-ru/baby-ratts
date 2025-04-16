@@ -1,0 +1,26 @@
+# Ignore all files with these extensions
+# These can also all be safely deleted
+*.aux
+*.bbl
+*.blg
+*-blx.bib
+*.lof
+*.log
+*.lot
+*.out
+*.run.xml
+*.synctex.gz
+*.toc
+*.lol
+*.xdv
+*.txt
+*.bak
+*.html
+
+readme*
+vscode/*
+orig-manual-bib
+# texstudio workspace
+*.txss
+
+
