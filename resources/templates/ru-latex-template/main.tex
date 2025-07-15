@@ -13,7 +13,7 @@ onehalfspacing, % Single line spacing, alternatives: onehalfspacing or doublespa
 headsepline, % Uncomment to get a line under the header
 %chapterinoneline, % Uncomment to place the chapter title next to the number on one line
 %consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
-]{MastersDoctoralThesis} % The class file specifying the document structure
+]{RhodesThesis} % The class file specifying the document structure
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Output font encoding for international characters
 \usepackage{layouts}
@@ -23,50 +23,28 @@ headsepline, % Uncomment to get a line under the header
 \usepackage[%
     final,
 ]{changes}
-\usepackage[style=ieee,maxcitenames=3,mincitenames=1,maxbibnames=6,minbibnames=6]{biblatex}
+\usepackage[style=ieee,maxcitenames=3,mincitenames=1,maxbibnames=6,minbibnames=6]{biblatex} % Change this to your preferred citation style; Or use `natbib` package instead (see below)
 % \usepackage[style=authoryear-icomp, maxnames=2, backend=bibtex,ibidtracker=false]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
-\setlength\bibitemsep{0.4\baselineskip}
-\addbibresource{Main/Bibliography/Masters.bib} % The filename of the bibliography
-
-% Packages
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{amsthm}
-\usepackage[math]{cellspace} % Necessary for adjusting matrix typesetting.
-\usepackage{upgreek}
-\usepackage{mathtools}
-\usepackage{xcolor}
-\usepackage{oplotsymbl}
-\newcolumntype{x}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}p{#1}}
-\usepackage{enumitem}
-\usepackage{geometry}
 % \usepackage[square, comma, numbers, sort&compress]{natbib}
+\setlength\bibitemsep{0.4\baselineskip}
+\addbibresource{path/to/bibliography.bib} % The filename of the bibliography
 
-\usepackage{bm}
-\usepackage{relsize}
-\usepackage{tikz}
-\usepackage{bbm}
-\usepackage{multirow}
-\usepackage{blindtext}
-\usepackage{titlesec}
-\usepackage[hidelinks]{hyperref}
-\usepackage{cleveref}
+\usepackage[hidelinks]{hyperref} % Make hyperlinks less instense
 \usepackage{subdepth}
 \usepackage{stmaryrd}
 \usepackage{caption}
-\usepackage{booktabs}
+\usepackage{booktabs} % For better tables
 \usepackage{graphicx}
 \usepackage[figuresleft]{rotating}
 \usepackage{dirtytalk}
-\usepackage[acronym,noredefwarn,style=super,nonumberlist,toc,nogroupskip=true]{glossaries}
+% \usepackage[acronym,noredefwarn,style=super,nonumberlist,toc,nogroupskip=true]{glossaries} % Uncomment to use glossaries
 \usepackage{tabularx}
 \usepackage{listings}
-\usepackage[htt]{hyphenat}
+\usepackage[htt]{hyphenat} % Improves hyphenation of URLs
 \usepackage{makecell}
 \usepackage{xspace}
 
-% Set some matrix properties to ensure neat typesetting of complicated matrix expressions. 
+% Set some matrix properties to ensure neat typesetting of complicated matrix expressions.
 
 \cellspacetoplimit 2pt
 \cellspacebottomlimit 2pt
@@ -88,11 +66,6 @@ headsepline, % Uncomment to get a line under the header
 
 \newdateformat{monthyeardate}{%
   \monthname[\THEMONTH], \THEYEAR}
-
-% Set up some global maths stuff.
-\DeclareMathOperator{\vect}{vec}
-\DeclareMathOperator*{\argmax}{\arg\!\max}
-\DeclareMathOperator*{\argmin}{\arg\!\min}
 
 % \newcommand{\brouw}[1]{\textcolor{red}{#1}}
 \newcommand{\brouw}[1]{\textcolor{black}{#1}}
@@ -117,7 +90,6 @@ headsepline, % Uncomment to get a line under the header
 	%showframe, % Uncomment to show how the type block is set on the page
 }
 
-
 \newcolumntype{b}{>{\hsize=1.3\hsize}X}  % For the bigger column
 \newcolumntype{s}{>{\hsize=0.75\hsize}X}  % For the smaller columns
 
@@ -129,18 +101,8 @@ headsepline, % Uncomment to get a line under the header
 \setcounter{secnumdepth}{2}
 \setcounter{tocdepth}{2}
 
-% New commands
 
-% 1. Short-hand for vectors/matrices
-\def\*#1{\boldsymbol{\mathrm{#1}}}
-
-% 2. Inner Product
-\newcommand{\inpdt}[2]{\langle\,#1,#2\,\rangle}
-
-% 3. Kronecker Product
-\newcommand{\kron}[2]{\langle#1#2\rangle}
-
-% 4. Redefine section headers for cleveref
+% Redefine section headers for cleveref
 \crefformat{section}{\S#2#1#3}
 \crefformat{subsection}{\S#2#1#3}
 \crefformat{subsubsection}{\S#2#1#3}
@@ -168,7 +130,7 @@ headsepline, % Uncomment to get a line under the header
 
 % 7. Shorthand for \texttt
 \def\^#1{\texttt{#1}}
-  
+
 % 10. Todo command for when future Brian needs to deal with it
 \newcommand{\TODO}{\textbf{\#TODO}}
 
@@ -186,7 +148,7 @@ headsepline, % Uncomment to get a line under the header
 \newcommand{\Den}[2]{\mathrm{p}\left(#1\;\middle|\;#2\right)}
 
 % 14. Quick matrix
-\newcommand\m[1]{\begin{bmatrix}#1\end{bmatrix}} 
+\newcommand\m[1]{\begin{bmatrix}#1\end{bmatrix}}
 
 % 15. Indicate lower triangle indexing
 \def\Low#1{\overset{'}{#1}}
@@ -257,7 +219,7 @@ headsepline, % Uncomment to get a line under the header
 \renewcommand*{\arraystretch}{1.3}
 
 % Load Glossary Entries
-\makenoidxglossaries 
+\makenoidxglossaries
 \loadglsentries{Main/List_of_Acronyms}
 \loadglsentries{Main/List_of_Symbols}
 \loadglsentries{Main/List_of_Online_Sources}
@@ -297,48 +259,48 @@ headsepline, % Uncomment to get a line under the header
 %----------------------------------------------------------------------------------------
 
 \begin{titlepage}
-\begin{center}
+  \begin{center}
 
-\vspace*{.06\textheight}
-\includegraphics[width=0.5\textwidth]{Main/rhodes_logo.pdf}
-\vspace*{.06\textheight}
-%{\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
-%\textsc{\Large Doctoral Thesis}\\[0.5cm] % Thesis type
+    \vspace*{.06\textheight}
+    \includegraphics[width=0.5\textwidth]{Main/rhodes_logo.pdf}
+    \vspace*{.06\textheight}
+    %{\scshape\LARGE \univname\par}\vspace{1.5cm} % University name
+    %\textsc{\Large Doctoral Thesis}\\[0.5cm] % Thesis type
 
-\HRule \\[0.4cm] % Horizontal line
-{\LARGE \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
-\HRule \\[1cm] % Horizontal line
- 
-\begin{minipage}[t]{0.3\textwidth}
-\begin{flushleft} \large
-\emph{Author:}\\
-{\authorname} % Author name - remove the \href bracket to remove the link
-\end{flushleft}
-\end{minipage}
-\begin{minipage}[t]{0.6\textwidth}
-\begin{flushright} \large
-\emph{Supervisor:} \\
-{\supname} \\
-\emph{Co-supervisor(s):} \\ 
-\cosupname % Supervisor name - remove the \href bracket to remove the link
-\end{flushright}
-\end{minipage}\\[1cm]
- 
-% \vfill
+    \HRule \\[0.4cm] % Horizontal line
+    {\LARGE \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
+    \HRule \\[1cm] % Horizontal line
 
-\large \textit{A thesis submitted in fulfilment of the requirements\\ for the degree of }\degreename \\[0.3cm] % University requirement text
-% \\[0.3cm]
-\textit{in the}\\[0.3cm]
-\groupname\\\deptname\\[0.3cm] % Research group name and department name
-\textit{of}\\[0.3cm]
-\univname\\[0.3cm]
+    \begin{minipage}[t]{0.3\textwidth}
+      \begin{flushleft} \large
+        \emph{Author:}\\
+        {\authorname} % Author name - remove the \href bracket to remove the link
+      \end{flushleft}
+    \end{minipage}
+    \begin{minipage}[t]{0.6\textwidth}
+      \begin{flushright} \large
+        \emph{Supervisor:} \\
+        {\supname} \\
+        \emph{Co-supervisor(s):} \\
+        \cosupname % Supervisor name - remove the \href bracket to remove the link
+      \end{flushright}
+    \end{minipage}\\[1cm]
 
-\large \textit{The financial assistance of the National Research Foundation (NRF) towards this research is hereby acknowledged. Opinions expressed and conclusions arrived at, are those of the author and are not necessarily to be attributed to the NRF.}\\[0.2cm]
-{\large \monthyeardate\today}\\[4cm] % Date
-%\includegraphics{Logo} % University/department logo - uncomment to place it
- 
-\vfill
-\end{center}
+    % \vfill
+
+    \large \textit{A thesis submitted in fulfilment of the requirements\\ for the degree of }\degreename \\[0.3cm] % University requirement text
+    % \\[0.3cm]
+    \textit{in the}\\[0.3cm]
+    \groupname\\\deptname\\[0.3cm] % Research group name and department name
+    \textit{of}\\[0.3cm]
+    \univname\\[0.3cm]
+
+    \large \textit{The financial assistance of the National Research Foundation (NRF) towards this research is hereby acknowledged. Opinions expressed and conclusions arrived at, are those of the author and are not necessarily to be attributed to the NRF.}\\[0.2cm]
+    {\large \monthyeardate\today}\\[4cm] % Date
+    %\includegraphics{Logo} % University/department logo - uncomment to place it
+
+    \vfill
+  \end{center}
 \end{titlepage}
 
 \let\cleardoublepage\clearpage
@@ -348,13 +310,13 @@ headsepline, % Uncomment to get a line under the header
 %----------------------------------------------------------------------------------------
 
 \begin{abstract}
-\addchaptertocentry{\abstractname} % Add the abstract to the table of contents
-\doublespacing
-    Calibration in radio interferometry is essential for correcting measurement errors. Traditional methods employ maximum likelihood techniques and non-linear least squares solvers but face challenges due to the data volumes and increased noise sensitivity of contemporary instruments such as MeerKAT. A common approach for mitigating these issues is using ``solution intervals", which helps manage the data volume and reduces overfitting. However, inappropriate interval sizes can degrade calibration quality, and determining optimal sizes is challenging, often relying on brute-force methods.
+  \addchaptertocentry{\abstractname} % Add the abstract to the table of contents
+  \doublespacing
+  Calibration in radio interferometry is essential for correcting measurement errors. Traditional methods employ maximum likelihood techniques and non-linear least squares solvers but face challenges due to the data volumes and increased noise sensitivity of contemporary instruments such as MeerKAT. A common approach for mitigating these issues is using ``solution intervals", which helps manage the data volume and reduces overfitting. However, inappropriate interval sizes can degrade calibration quality, and determining optimal sizes is challenging, often relying on brute-force methods.
 
-    This study introduces \acrfull{kalcal}, a new framework for calibration that combines the Kalman Filter, Kalman Smoother, and the energy function: the negative logarithm of the Bayesian evidence. \acrshort{kalcal} offers Bayesian-optimal solutions as probability densities and models calibration effects with lower computational requirements than iterative approaches. Unlike traditional methods, which require all the data for a particular solution to be in memory simultaneously, \acrshort{kalcal}'s recursive computations only need a single pass through the data with appropriate prior information. The energy function provides the means for \acrshort{kalcal} to determine this prior information. 
-    
-    Theoretical contributions include additions to complex optimisation literature and the ``Kalman-Woodbury Identity" that reformulates the traditional Kalman Filter. A Python implementation of the \acrshort{kalcal} framework was benchmarked against solution intervals as implemented in the QuartiCal package. Simulations show \acrshort{kalcal} matching solution intervals in high \acrfull{SNR} scenarios and surpassing them in low \acrshort{SNR} conditions. Moreover, the energy function produced minima that coincide with \acrshort{kalcal}'s \acrfull{MSE} on the true gain signal. This result is significant as the \acrshort{MSE} is unavailable in real applications. Further research is needed to assess the computational feasibility and intricacies of \acrshort{kalcal}.
+  This study introduces \acrfull{kalcal}, a new framework for calibration that combines the Kalman Filter, Kalman Smoother, and the energy function: the negative logarithm of the Bayesian evidence. \acrshort{kalcal} offers Bayesian-optimal solutions as probability densities and models calibration effects with lower computational requirements than iterative approaches. Unlike traditional methods, which require all the data for a particular solution to be in memory simultaneously, \acrshort{kalcal}'s recursive computations only need a single pass through the data with appropriate prior information. The energy function provides the means for \acrshort{kalcal} to determine this prior information.
+
+  Theoretical contributions include additions to complex optimisation literature and the ``Kalman-Woodbury Identity" that reformulates the traditional Kalman Filter. A Python implementation of the \acrshort{kalcal} framework was benchmarked against solution intervals as implemented in the QuartiCal package. Simulations show \acrshort{kalcal} matching solution intervals in high \acrfull{SNR} scenarios and surpassing them in low \acrshort{SNR} conditions. Moreover, the energy function produced minima that coincide with \acrshort{kalcal}'s \acrfull{MSE} on the true gain signal. This result is significant as the \acrshort{MSE} is unavailable in real applications. Further research is needed to assess the computational feasibility and intricacies of \acrshort{kalcal}.
 \end{abstract}
 
 %----------------------------------------------------------------------------------------
@@ -362,23 +324,23 @@ headsepline, % Uncomment to get a line under the header
 %----------------------------------------------------------------------------------------
 
 \begin{declaration}
-\addchaptertocentry{\authorshipname} % Add the declaration to the table of contents
-\noindent I, \authorname, declare that this thesis titled, \enquote{\ttitle} and the work presented in it are my own. I confirm that:
+  \addchaptertocentry{\authorshipname} % Add the declaration to the table of contents
+  \noindent I, \authorname, declare that this thesis titled, \enquote{\ttitle} and the work presented in it are my own. I confirm that:
 
-\begin{itemize} 
-\item This work was done wholly or mainly while in candidature for a research degree at this University.
-\item Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
-\item Where I have consulted the published work of others, this is always clearly attributed.
-\item Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
-\item I have acknowledged all main sources of help.
-\item Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
-\end{itemize}
- 
-\noindent Signed: \authorname \\
-\rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
- 
-\noindent Date: \monthyeardate\today\\
-\rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
+  \begin{itemize}
+    \item This work was done wholly or mainly while in candidature for a research degree at this University.
+    \item Where any part of this thesis has previously been submitted for a degree or any other qualification at this University or any other institution, this has been clearly stated.
+    \item Where I have consulted the published work of others, this is always clearly attributed.
+    \item Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
+    \item I have acknowledged all main sources of help.
+    \item Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
+  \end{itemize}
+
+  \noindent Signed: \authorname \\
+  \rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
+
+  \noindent Date: \monthyeardate\today\\
+  \rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
 \end{declaration}
 
 % \cleardoublepage
@@ -399,23 +361,23 @@ headsepline, % Uncomment to get a line under the header
 %----------------------------------------------------------------------------------------
 
 \begin{acknowledgements}
-\addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
-    This thesis is the culmination of the combined efforts and support of numerous individuals and institutions, to whom I owe a profound debt of gratitude. I extend my sincere thanks to Rhodes University, \acrshort{SARAO}, and NRF for their financial support and the academic opportunities they have provided. The RATT research group deserves special mention; my fellow RATTs have been instrumental in this journey, enriching it with invaluable knowledge, insightful discussions, and memorable social gatherings. I am profoundly grateful for the learning and camaraderie experienced. I am indebted to Dr. Ulrich Sob, whose expert guidance with my simulated experiment, calibration, and radio interferometry has been indispensable. Similarly, Cyndie Russeeawon's unwavering support and assistance, both theoretically and practically, have been invaluable, not only professionally but also in fostering a deep friendship. To Prof. Oleg Smirnov, I express my deepest gratitude for the opportunity to undertake this project under RATT. Your patience, wisdom, belief in my abilities, and kindness, especially during challenging times, have been a beacon of support. Dr. Jonathan Kenyon's contributions to my thesis have been immeasurable. From programming assistance to meticulous reviews of my academic writing, the dedication and effort you have invested have been priceless. Finally, a massive thank you to Dr. Landman Bester. Although we debated many aspects of the work, I am immensely thankful for your experience, knowledge, guidance, and patience, which, in conjunction with Dr. Kenyon, have been crucial to the fruition and refinement of this work. I am highly grateful for your supervision of this work and for empowering me with the confidence and critical thinking skills essential for navigating the complexities of this field.
+  \addchaptertocentry{\acknowledgementname} % Add the acknowledgements to the table of contents
+  This thesis is the culmination of the combined efforts and support of numerous individuals and institutions, to whom I owe a profound debt of gratitude. I extend my sincere thanks to Rhodes University, \acrshort{SARAO}, and NRF for their financial support and the academic opportunities they have provided. The RATT research group deserves special mention; my fellow RATTs have been instrumental in this journey, enriching it with invaluable knowledge, insightful discussions, and memorable social gatherings. I am profoundly grateful for the learning and camaraderie experienced. I am indebted to Dr. Ulrich Sob, whose expert guidance with my simulated experiment, calibration, and radio interferometry has been indispensable. Similarly, Cyndie Russeeawon's unwavering support and assistance, both theoretically and practically, have been invaluable, not only professionally but also in fostering a deep friendship. To Prof. Oleg Smirnov, I express my deepest gratitude for the opportunity to undertake this project under RATT. Your patience, wisdom, belief in my abilities, and kindness, especially during challenging times, have been a beacon of support. Dr. Jonathan Kenyon's contributions to my thesis have been immeasurable. From programming assistance to meticulous reviews of my academic writing, the dedication and effort you have invested have been priceless. Finally, a massive thank you to Dr. Landman Bester. Although we debated many aspects of the work, I am immensely thankful for your experience, knowledge, guidance, and patience, which, in conjunction with Dr. Kenyon, have been crucial to the fruition and refinement of this work. I am highly grateful for your supervision of this work and for empowering me with the confidence and critical thinking skills essential for navigating the complexities of this field.
 
-    To my family, spread from Bermuda to England, Mozambique, and Graaff-Reinet, the love and support you have extended have been a cornerstone of my journey. Nigel and Nita Hallowes, your invaluable support, especially in the latter stages, whether through family assistance, babysitting, or the simple act of preparing a meal, has been a tremendous source of strength. You have my deepest thanks and love. To Mom, your endless love, kindness, and encouragement are highly cherished. The sacrifices you've made for me to have this opportunity are immeasurable; for that, my love and gratitude know no bounds. To Dad, thank you for the meaningful heart-to-hearts about my work and life. Your unwavering belief in me and your motivational spirit during tough times have been foundational. Your love and sacrifices have paved the way for this achievement, and for that, I am eternally grateful. To my dearest Freya, Thor, Minos, Bastet, and Hera, your unconditional love and comforting presence have been a source of joy and solace. I love all of you so much. Finally and most importantly, I want to thank my wife, Lola and my son, Björn. To my son, I am so lucky to be your dad and to watch you grow up. I feel so privileged that after work, I got to spend the rest of my time with you. Even as you grow up, I will never forget the healing moments we had together, especially when watching rally racing videos or dinosaur documentaries or going to the arcade or skate-park. I hope this papa makes you proud, and I love you so much. To my beautiful wife, you are the number one reason why I was able to finish this thesis. You sacrificed so much to allow me to finish this work, even when times were tough. When I was down and weak, you lifted me up and kept me going. You picked up where I could not. You made me hundreds of cups of amazing coffee and tea. You provided me so many opportunities to complete my work. I remember everything you did for me, and I will always be indebted to you for this. I hope I have made you proud and that you can share the infinite love and kindness you afforded me when you are in need. You truly are the most amazing person ever. Thank you, my love.
+  To my family, spread from Bermuda to England, Mozambique, and Graaff-Reinet, the love and support you have extended have been a cornerstone of my journey. Nigel and Nita Hallowes, your invaluable support, especially in the latter stages, whether through family assistance, babysitting, or the simple act of preparing a meal, has been a tremendous source of strength. You have my deepest thanks and love. To Mom, your endless love, kindness, and encouragement are highly cherished. The sacrifices you've made for me to have this opportunity are immeasurable; for that, my love and gratitude know no bounds. To Dad, thank you for the meaningful heart-to-hearts about my work and life. Your unwavering belief in me and your motivational spirit during tough times have been foundational. Your love and sacrifices have paved the way for this achievement, and for that, I am eternally grateful. To my dearest Freya, Thor, Minos, Bastet, and Hera, your unconditional love and comforting presence have been a source of joy and solace. I love all of you so much. Finally and most importantly, I want to thank my wife, Lola and my son, Björn. To my son, I am so lucky to be your dad and to watch you grow up. I feel so privileged that after work, I got to spend the rest of my time with you. Even as you grow up, I will never forget the healing moments we had together, especially when watching rally racing videos or dinosaur documentaries or going to the arcade or skate-park. I hope this papa makes you proud, and I love you so much. To my beautiful wife, you are the number one reason why I was able to finish this thesis. You sacrificed so much to allow me to finish this work, even when times were tough. When I was down and weak, you lifted me up and kept me going. You picked up where I could not. You made me hundreds of cups of amazing coffee and tea. You provided me so many opportunities to complete my work. I remember everything you did for me, and I will always be indebted to you for this. I hope I have made you proud and that you can share the infinite love and kindness you afforded me when you are in need. You truly are the most amazing person ever. Thank you, my love.
 \end{acknowledgements}
 
 \cleardoublepage
 \begin{center}
-\noindent\textit{\Large To my beautiful wife, \emph{Lola},}\\[1cm]
-\textit{\Large and my beloved son, \emph{Björn},}\\[1cm]
-\textit{\Large for their endless love, support, and inspiration.}    
+  \noindent\textit{\Large To my beautiful wife, \emph{Lola},}\\[1cm]
+  \textit{\Large and my beloved son, \emph{Björn},}\\[1cm]
+  \textit{\Large for their endless love, support, and inspiration.}
 \end{center}
 \vfill
 
 \begin{center}
-    \Large
-    \noindent\enquote{\itshape There is nothing I cannot teach myself.}\bigbreak
+  \Large
+  \noindent\enquote{\itshape There is nothing I cannot teach myself.}\bigbreak
 \end{center}
 
 \cleardoublepage
